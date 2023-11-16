@@ -44,9 +44,9 @@ contact: 'annaliese.micallef-grimaud@durham.ac.uk'
 # Example -------------
 #
 # episodes:
-# - Why R for Music Research?.Rmd
-# - GettingStartedWithR.Rmd
-# - importing-data-in-R.Rmd
+- Why R for Music Research?.Rmd
+- GettingStartedWithR.Rmd
+- importing-data-in-R.Rmd
 #
 # learners:
 # - setup.md
