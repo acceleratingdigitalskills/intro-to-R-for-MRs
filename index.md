@@ -2,6 +2,6 @@
 site: sandpaper::sandpaper_site
 ---
 
-This is teaching material for a one-day workshop that aims to introduce the programming language R to music researchers. 
+This course offers a gentle introduction to the programming language R for music researchers. 
 
 
