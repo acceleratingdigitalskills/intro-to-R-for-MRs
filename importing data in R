@@ -7,13 +7,16 @@ exercises: 0
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - Which data files can be imported in R?
-- How is files in excel and .csv format displayed in R?
+- How are files in excel and .csv format displayed in R?
+- How does R deal with missing values?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Read a .csv file in R
+- Read an excel file in R
+- Specify how to deal with missing values
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
