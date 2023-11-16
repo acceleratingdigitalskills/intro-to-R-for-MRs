@@ -17,7 +17,7 @@ Current Maintainers of this lesson are:
 * [Annaliese Micallef Grimaud](annaliese.micallef-grimaud@durham.ac.uk)
 * [Eamonn Bell](eamonn.bell@durham.ac.uk)
 * Christopher Haworth
-* Fernando Andreu
+* Fernando Andreu (DU)
 
 ## Contact
 Please get in touch with [Ananliese Micallef Grimaud](annaliese.micallef-grimaud@durham.ac.uk) or [Eamonn Bell](eamonn.bell@durham.ac.uk) with any questions about this lesson.
