@@ -12,8 +12,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- To do 1
-- To do 2
+- Learners will be able to demonstrate they can navigate Rstudio's user interface and create the basic directories required for a project
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
