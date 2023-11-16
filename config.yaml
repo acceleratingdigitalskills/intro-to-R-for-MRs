@@ -44,10 +44,10 @@ contact: 'annaliese.micallef-grimaud@durham.ac.uk'
 # Example -------------
 #
 # episodes:
-- Why-R-for-Music-Research.Rmd
-- GettingStartedWithR.Rmd
-- importing-data-in-R.Rmd
-- introduction.Rmd
+#- Why-R-for-Music-Research.Rmd
+#- GettingStartedWithR.Rmd
+#- importing-data-in-R.Rmd
+#- introduction.Rmd
 #
 # learners:
 # - setup.md
@@ -62,6 +62,9 @@ contact: 'annaliese.micallef-grimaud@durham.ac.uk'
 # Order of episodes in your lesson
 episodes: 
 - introduction.Rmd
+- Why-R-for-Music-Research.Rmd
+- GettingStartedWithR.Rmd
+- importing-data-in-R.Rmd
 
 # Information for Learners
 learners: 
