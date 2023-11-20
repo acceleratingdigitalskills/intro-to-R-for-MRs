@@ -1,0 +1,18 @@
+---
+title: "Getting started with R and RStudio"
+teaching: 0
+exercises: 0
+---
+
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- How do you write a lesson using Markdown and `{sandpaper}`?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Learners will be able to demonstrate they can navigate Rstudio's user interface and create the basic directories required for a project
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
