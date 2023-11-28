@@ -18,7 +18,6 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-After completing this episode, learners should be able to:
 - Navigate the user interface of RStudio
 - Run commands in the console
 - Run commands in an R script
@@ -37,26 +36,14 @@ Complete the following code to first install the ggplot2 package and then load t
 
 Step 1 - Install package
 
-
-```r
-install.______('_____')
 ```
-
-```{.error}
-Error in install.______("_____"): could not find function "install.______"
+install.______('_____')
 ```
 
 Step 2 - Load package
 
-
-```r
-library(_____)
 ```
-
-```{.error}
-Error: <text>:1:10: unexpected input
-1: library(__
-             ^
+library(_____)
 ```
 
 ::::::::::::::: solution
@@ -75,7 +62,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.8 milliseconds.
+Successfully installed 1 package in 4.7 milliseconds.
 ```
 
 Step 2 - Load package
