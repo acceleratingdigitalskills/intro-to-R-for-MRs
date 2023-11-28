@@ -274,13 +274,15 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<p>After completing this episode, learners should be able to: - Navigate
-the user interface of RStudio - Run commands in the console - Run
-commands in an R script - Use install.packages() to download and install
-a library package - Use library() to load the downloaded package - Use
-the help(), help.search(), ?, and ?? commands to look up
-documentation</p>
-</div>
+<ul><li>Navigate the user interface of RStudio</li>
+<li>Run commands in the console</li>
+<li>Run commands in an R script</li>
+<li>Use install.packages() to download and install a library
+package</li>
+<li>Use library() to load the downloaded package</li>
+<li>Use the help(), help.search(), ?, and ?? commands to look up
+documentation</li>
+</ul></div>
 </div>
 </div>
 </div>
@@ -296,30 +298,9 @@ documentation</p>
 <p>Complete the following code to first install the ggplot2 package and
 then load the package in your R environment.</p>
 <p>Step 1 - Install package</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">install.______</span><span class="op">(</span><span class="st">'_____'</span><span class="op">)</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="error" tabindex="0"><code>Error in install.______("_____"): could not find function "install.______"</code></pre>
-</div>
+<pre><code><span><span class="fu">install.______</span><span class="op">(</span><span class="st">'_____'</span><span class="op">)</span></span></code></pre>
 <p>Step 2 - Load package</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(_____)</span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="error" tabindex="0"><code>Error: &lt;text&gt;:1:10: unexpected input
-1: library(__
-             ^</code></pre>
-</div>
+<pre><code>library(_____)</code></pre>
 </div>
 </div>
 </div>
@@ -330,10 +311,10 @@ then load the package in your R environment.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Step 1 - Install package</p>
-<div class="codewrapper sourceCode" id="cb5">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -348,10 +329,10 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.8 milliseconds.</code></pre>
+Successfully installed 1 package in 4.7 milliseconds.</code></pre>
 </div>
 <p>Step 2 - Load package</p>
-<div class="codewrapper sourceCode" id="cb7">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
