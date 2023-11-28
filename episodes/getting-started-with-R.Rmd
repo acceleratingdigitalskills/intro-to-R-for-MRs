@@ -27,3 +27,38 @@ After completing this episode, learners should be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::: challenge
+
+### Exercise: Install and load packages
+
+Complete the following code to first install the ```ggplot2``` package and then load the package in your R environment.
+
+Step 1 - Install package
+
+```{r}
+install.______('_____')
+```
+
+Step 2 - Load package
+
+```{r}
+library(_____)
+```
+
+::::::::::::::: solution
+
+Step 1 - Install package
+
+```{r}
+install.packages('ggplot2')
+```
+
+Step 2 - Load package
+
+```{r}
+library(ggplot2)
+```
+:::::::::::::::
+::::::::::::::::::::::::::::
+
+
