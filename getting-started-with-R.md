@@ -27,3 +27,62 @@ After completing this episode, learners should be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::: challenge
+
+### Exercise: Install and load packages
+
+Complete the following code to first install the ```ggplot2``` package and then load the package in your R environment.
+
+Step 1 - Install package
+
+
+```r
+install.______('_____')
+```
+
+```{.error}
+Error in install.______("_____"): could not find function "install.______"
+```
+
+Step 2 - Load package
+
+
+```r
+library(_____)
+```
+
+```{.error}
+Error: <text>:1:10: unexpected input
+1: library(__
+             ^
+```
+
+::::::::::::::: solution
+
+Step 1 - Install package
+
+
+```r
+install.packages('ggplot2')
+```
+
+```{.output}
+The following package(s) will be installed:
+- ggplot2 [3.4.4]
+These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-MRs/renv/profiles/lesson-requirements/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing ggplot2 ...                        OK [linked from cache]
+Successfully installed 1 package in 4.8 milliseconds.
+```
+
+Step 2 - Load package
+
+
+```r
+library(ggplot2)
+```
+:::::::::::::::
+::::::::::::::::::::::::::::
+
+
