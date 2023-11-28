@@ -15,6 +15,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+
 ::::::::::::::::::::::::::::::::::::: objectives
 
 After completing this episode, learners should be able to:
@@ -27,11 +28,12 @@ After completing this episode, learners should be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+
 :::::::::::::::::::::::::::::: challenge
 
 ### Exercise: Install and load packages
 
-Complete the following code to first install the ```ggplot2``` package and then load the package in your R environment.
+Complete the following code to first install the ggplot2 package and then load the package in your R environment.
 
 Step 1 - Install package
 
