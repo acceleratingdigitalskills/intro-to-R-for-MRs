@@ -17,8 +17,13 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Learners will be able to demonstrate they can navigate RStudio's user interface
-- Learners will be introduced to the console, environment, navigation, and R script panes in RStudio
+After completing this episode, learners should be able to:
+- Navigate the user interface of RStudio
+- Run commands in the console
+- Run commands in an R script
+- Use install.packages() to download and install a library package
+- Use library() to load the downloaded package
+- Use the help(), help.search(), ?, and ?? commands to look up documentation 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
