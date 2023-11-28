@@ -22,6 +22,9 @@
     <loc>https://carpentries.github.io/workbench-template-rmd/aio.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/getting-started-with-R.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/images.html</loc>
   </url>
   <url>
@@ -52,6 +55,9 @@
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/aio.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/getting-started-with-R.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/images.html</loc>
   </url>
   <url>
@@ -79,6 +85,9 @@
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/why-R-for-music-research.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor-notes.html</loc>
   </url>
   <url>
@@ -95,5 +104,8 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/why-R-for-music-research.html</loc>
   </url>
 </urlset>
