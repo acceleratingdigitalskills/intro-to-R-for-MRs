@@ -71,10 +71,13 @@ Step 2 - Load package
 library(ggplot2)
 ```
 :::::::::::::::
-
-Let's have a look at our loaded packages. To view all packages loade in our R environment, run the following command (.packages())
-
-What is the output?
 ::::::::::::::::::::::::::::
 
+Let's have a look at our loaded packages. To view all packages loaded in our R environment, run the following command (.packages())
+
+What is the output?
+
+```{r}
+(.packages())
+```
 
