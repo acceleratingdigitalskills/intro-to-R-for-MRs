@@ -20,8 +20,8 @@ exercises: 0
 - Navigate the user interface of RStudio
 - Run commands in the console
 - Run commands in an R script
-- Use install.packages() to download and install a library package
-- Use library() to load the downloaded package
+- Learn how to install a library package
+- Learn how to load the downloaded package
 - Use the help(), help.search(), ?, and ?? commands to look up documentation 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -87,3 +87,10 @@ What is the output?
 Testing out instructor notes 
 
 :::::::::::::::::::::::
+
+::::::::::::: keypoints
+
+- Use install.packages() to download and install a library package
+- Use library() to load the downloaded package
+
+:::::::::::::::::::::
