@@ -15,6 +15,47 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to extend R's capability, depending on what you want to use it for. Our persona wants to read a huge dataset and then be able to manipulate the data, by subsetting parts of it, to have a closer look at certain elements. The dplyr package is very useful for this so we want to install and load it in our R environment. To do so, we need to following the next steps: 
+
+Step 1 - Install the package
+
+```r
+install.packages('dplyr')
+```
+
+```{.output}
+The following package(s) will be installed:
+- dplyr [1.1.4]
+These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-MRs/renv/profiles/lesson-requirements/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing dplyr ...                          OK [linked from cache]
+Successfully installed 1 package in 4.8 milliseconds.
+```
+
+Step 2 - Load package
+
+
+```r
+library(dplyr)
+```
+
+```{.output}
+
+Attaching package: 'dplyr'
+```
+
+```{.output}
+The following objects are masked from 'package:stats':
+
+    filter, lag
+```
+
+```{.output}
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+```
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
@@ -32,7 +73,7 @@ exercises: 0
 
 ### Exercise: Install and load packages
 
-Complete the following code to first install the ggplot2 package and then load the package in your R environment.
+Further on, our persona will want to visualise the number of songwriters per century by gender. For this, we need to install and load the ggplot2 package. Complete the following code to first install the ggplot2 package and then load the package in your R environment.
 
 Step 1 - Install package
 
@@ -62,7 +103,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.7 milliseconds.
+Successfully installed 1 package in 4 milliseconds.
 ```
 
 Step 2 - Load package
@@ -72,6 +113,10 @@ Step 2 - Load package
 library(ggplot2)
 ```
 :::::::::::::::
+
+Let's have a look at our loaded packages. To view all packages loade in our R environment, run the following command (.packages())
+
+What is the output?
 ::::::::::::::::::::::::::::
 
 
