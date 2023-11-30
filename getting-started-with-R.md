@@ -15,6 +15,17 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Navigate the user interface of RStudio
+- Run commands in the console
+- Run commands in an R script
+- Use install.packages() to download and install a library package
+- Use library() to load the downloaded package
+- Use the help(), help.search(), ?, and ?? commands to look up documentation 
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to extend R's capability, depending on what you want to use it for. Our persona wants to read a huge dataset and then be able to manipulate the data, by subsetting parts of it, to have a closer look at certain elements. The dplyr package is very useful for this so we want to install and load it in our R environment. To do so, we need to following the next steps: 
 
 Step 1 - Install the package
@@ -30,7 +41,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 4.8 milliseconds.
+Successfully installed 1 package in 4.9 milliseconds.
 ```
 
 Step 2 - Load package
@@ -56,18 +67,6 @@ The following objects are masked from 'package:base':
 
     intersect, setdiff, setequal, union
 ```
-
-::::::::::::::::::::::::::::::::::::: objectives
-
-- Navigate the user interface of RStudio
-- Run commands in the console
-- Run commands in an R script
-- Use install.packages() to download and install a library package
-- Use library() to load the downloaded package
-- Use the help(), help.search(), ?, and ?? commands to look up documentation 
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 :::::::::::::::::::::::::::::: challenge
 
