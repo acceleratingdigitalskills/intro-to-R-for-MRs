@@ -41,7 +41,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 4.9 milliseconds.
+Successfully installed 1 package in 5 milliseconds.
 ```
 
 Step 2 - Load package
@@ -102,7 +102,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.3 milliseconds.
+Successfully installed 1 package in 4.2 milliseconds.
 ```
 
 Step 2 - Load package
