@@ -61,7 +61,6 @@ contact: 'annaliese.micallef-grimaud@durham.ac.uk'
 
 # Order of episodes in your lesson
 episodes: 
-- introduction.Rmd
 - why-R-for-music-research.Rmd
 - getting-started-with-R.Rmd
 - importing-data-in-R.Rmd
