@@ -243,25 +243,64 @@
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Setup</h1>
       
 
-<p>This course offers a gentle introduction to the programming language
-R for music researchers.</p>
-<p>No prior programming experience is required, but before joining this
-course, learners should: - be able to download and install R and
-RStudio</p>
-<section id="lesson-objectives"><h2 class="section-heading">Lesson objectives<a class="anchor" aria-label="anchor" href="#lesson-objectives"></a>
-</h2>
-<hr class="half-width"><p>Demonstrate they can navigate Rstudio’s user interface and create the
-basic directories required for a project.</p>
-<p>Retrieve help documentation relevant to tasks 1, 2 and 3</p>
-<p>Import and read data in R</p>
-<p>Clean a dataset and process it prior to analysis</p>
-<p>Run some initial analyses on data in R</p>
-<p>Visualise some data using the ggplot2 package</p>
+<p>This is an introduction to R and RStudio designed for music
+researchers with no programming experience. The lesson aims to showcase
+how an individual might find R useful for their music research. Some
+initial information about the R syntax and navigating the RStudio
+interface are given, followed by information about how to import CSV
+files, clean your data, look at subsets of your data, carry out some
+initial statistical calculations, visualising different elements of your
+data, and finally, present some best practices when writing code in R.
+Two example case studies are used in this lesson, featuring two types of
+web data sets - by no means does this lesson present an exhaustive list
+of the uses of R. The case studies presented are two of several
+potential use cases of how an individual may use R for their research
+and to work with data. The main aim is to give a taste of what R can do
+for music researchers, and hopefully encourage researchers to consider R
+as one of multiple useful tools in their tool kit when it comes to
+working with data for their music research.</p>
+<div id="prereq1" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Prerequisite<a class="anchor" aria-label="anchor" href="#prereq1"></a>
+</h3>
+<div class="callout-content">
+<ul><li>This lesson requires R and RStudio to be installed on the learner’s
+device.</li>
+<li>The two dummy data set files need to be downloaded in preparation
+for this lesson.</li>
+</ul></div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="r-and-rstudio-setup-instructions">R and RStudio setup instructions<a class="anchor" aria-label="anchor" href="#r-and-rstudio-setup-instructions"></a></h3>
+<p>First, download R (there are 3 versions to choose from, depending on
+your device’s OS – Mac, Windows, or Linux) from here and install: <a href="https://cran.r-project.org" class="external-link uri">https://cran.r-project.org</a></p>
+<p>After R is installed, download RStudio Desktop here: <a href="https://posit.co/downloads/" class="external-link uri">https://posit.co/downloads/</a></p>
+<p>Press on the ‘Download RStudio’ button. This will direct you to
+installation set up with 2 steps. Step 1 is installing R which you will
+have already done, so skip that and go to Step 2. Download RStudio by
+either pressing on the button below ‘2: Install RStudio’ or from the
+options available when scrolling down the web page (choose one depending
+on your OS) and install.</p>
+<p>Once installed, try opening RStudio Desktop to check that it works.
+The RStudio environment is what we will be working in during this
+lesson.</p>
+<p>Downloading the data sets to follow this lesson: 1. Make a new folder
+in your Desktop called r-intro-music-research. 2. Download
+r-intro-data.zip and move the file to this folder. 3. If it’s not
+unzipped yet, double-click on it to unzip it. You should end up with a
+new folder called data.</p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section><section id="setup"><p>FIXME: Setup instructions live in this document. Please specify the
+</div>
+
+
+      <section id="setup"><p>FIXME: Setup instructions live in this document. Please specify the
 tools and the data sets the Learner needs to have installed.</p>
 <section id="data-sets"><h2 class="section-heading">Data Sets<a class="anchor" aria-label="anchor" href="#data-sets"></a>
 </h2>
@@ -294,7 +333,7 @@ e.g. online setup) in the solutions blocks.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Windows</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Use PuTTY</p>
 </div>
@@ -306,7 +345,7 @@ e.g. online setup) in the solutions blocks.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">MacOS</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Use Terminal.app</p>
 </div>
@@ -318,7 +357,7 @@ e.g. online setup) in the solutions blocks.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Linux</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Use Terminal</p>
 </div>
@@ -356,7 +395,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.1" class="external-link">sandpaper (0.16.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.2" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -369,6 +408,7 @@ any links that you are not going to use.
   "@context": "https://schema.org",
   "@type": "TrainingMaterial",
   "@id": "https://carpentries.github.io/workbench-template-rmd/index.html",
+  "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "R, programming, music research, lesson, english",
@@ -377,8 +417,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-rmd/index.html",
   "identifier": "https://carpentries.github.io/workbench-template-rmd/index.html",
   "dateCreated": "2023-11-16",
-  "dateModified": "2023-12-19",
-  "datePublished": "2023-12-19"
+  "dateModified": "2023-12-20",
+  "datePublished": "2023-12-20"
 }
 
   </script><script>
