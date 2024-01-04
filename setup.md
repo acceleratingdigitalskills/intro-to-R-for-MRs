@@ -49,7 +49,7 @@ Once installed, try opening RStudio Desktop to check that it works.
 ### Linux
 
 Go to the [CRAN website](https://cran.r-project.org/bin/linux/) and follow the instructions for your distribution to download and install R.
-After R is installed, go to the RStudio download page.
+After R is installed, go to the [RStudio download page](https://posit.co/download/rstudio-desktop/).
 Under Installers select the version that matches your distribution, and install it with your preferred method.
 Once installed, open RStudio to make sure it works.
 
