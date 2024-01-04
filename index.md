@@ -11,20 +11,6 @@ This is an introduction to R and RStudio designed for music researchers with no 
 
 :::::::::::::::::::::::::
 
-### R and RStudio setup instructions
-
-First, download R (there are 3 versions to choose from, depending on your device’s OS – Mac, Windows, or Linux) from here and install: https://cran.r-project.org 
-
-After R is installed, download RStudio Desktop here: https://posit.co/downloads/ 
-
-Press on the ‘Download RStudio’ button. This will direct you to installation set up with 2 steps. Step 1 is installing R which you will have already done, so skip that and go to Step 2. Download RStudio by either pressing on the button below ‘2: Install RStudio’ or from the options available when scrolling down the web page (choose one depending on your OS) and install.
-
-Once installed, try opening RStudio Desktop to check that it works. The RStudio environment is what we will be working in during this lesson. 
-
-Downloading the data sets to follow this lesson:
-1.	Make a new folder in your Desktop called r-intro-music-research.
-2.	Download r-intro-data.zip and move the file to this folder.
-3.	If it’s not unzipped yet, double-click on it to unzip it. You should end up with a new folder called data.
 
 
 
