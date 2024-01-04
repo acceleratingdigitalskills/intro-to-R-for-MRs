@@ -20,4 +20,4 @@ Current Maintainers of this lesson are:
 * Fernando Andreu (DU)
 
 ## Contact
-Please get in touch with [Ananliese Micallef Grimaud](annaliese.micallef-grimaud@durham.ac.uk) or [Eamonn Bell](eamonn.bell@durham.ac.uk) with any questions about this lesson.
+Please get in touch with [Annaliese Micallef Grimaud](annaliese.micallef-grimaud@durham.ac.uk) or [Eamonn Bell](eamonn.bell@durham.ac.uk) with any questions about this lesson.
