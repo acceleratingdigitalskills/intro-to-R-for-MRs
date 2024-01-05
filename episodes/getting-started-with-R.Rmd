@@ -29,7 +29,9 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to help extend R's capability, depending on what you want to use it for. Our persona wants to read a huge dataset and then be able to manipulate the data, by subsetting parts of it, to have a closer look at certain elements. The `dplyr` package is very useful for this so we want to install and load it in our R environment. To do so, we need to following the next steps: 
+Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to help extend R's capability, depending on what you want to use it for. Packages can be downloaded from the [Comprehensive R Archive Network](https://cran.r-project.org) known as CRAN.
+
+Our persona wants to read a huge dataset and then be able to manipulate the data, by subsetting parts of it, to have a closer look at certain elements. The `dplyr` package is very useful for this so we want to download it. To do so, we first need to install it and then load it into our R environment by following these two steps: 
 
 Step 1 - Install the package   
 
@@ -77,9 +79,7 @@ library(ggplot2)
 :::::::::::::::
 :::::::::::::::::::::::::::::::::
 
-Let's have a look at our loaded packages. To view all packages loaded in our R environment, run the following command `(.packages())`
-
-What is the output?
+Let's have a look at our loaded packages. To view all packages loaded in our R environment, run the following command:
 
 ```{r}
 (.packages())
