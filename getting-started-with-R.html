@@ -156,12 +156,20 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         2. Getting started with R and RStudio
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+        
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#getting-help-in-r">Getting help in R</a></li>
+<li><a href="#getting-help-outside-of-r">Getting help outside of R</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -281,12 +289,12 @@
 </div>
 <p>Default R comes with what are called base functions. However, R users
 have also created other packages which hold different tools that can be
-added to R, to extend R’s capability, depending on what you want to use
-it for. Our persona wants to read a huge dataset and then be able to
+added to R, to help extend R’s capability, depending on what you want to
+use it for. Our persona wants to read a huge dataset and then be able to
 manipulate the data, by subsetting parts of it, to have a closer look at
-certain elements. The dplyr package is very useful for this so we want
-to install and load it in our R environment. To do so, we need to
-following the next steps:</p>
+certain elements. The <code>dplyr</code> package is very useful for this
+so we want to install and load it in our R environment. To do so, we
+need to following the next steps:</p>
 <p>Step 1 - Install the package</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -342,8 +350,9 @@ Attaching package: 'dplyr'</code></pre>
 <div class="callout-content">
 <p>Further on, our persona will want to visualise the number of
 songwriters per century by gender. For this, we need to install and load
-the ggplot2 package. Complete the following code to first install the
-ggplot2 package and then load the package in your R environment.</p>
+the <code>ggplot2</code> package. Complete the following code to first
+install the <code>ggplot2</code> package and then load the package in
+your R environment.</p>
 <p>Step 1 - Install package</p>
 <pre><code><span><span class="fu">install.______</span><span class="op">(</span><span class="st">'_____'</span><span class="op">)</span></span></code></pre>
 <p>Step 2 - Load package</p>
@@ -356,7 +365,7 @@ ggplot2 package and then load the package in your R environment.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Step 1 - Install package</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -403,8 +412,76 @@ in our R environment, run the following command
 <pre class="output" tabindex="0"><code>[1] "ggplot2"   "dplyr"     "stats"     "graphics"  "grDevices" "utils"    
 [7] "datasets"  "methods"   "base"     </code></pre>
 </div>
-
-<div id="keypoints1" class="callout keypoints">
+<section id="getting-help-in-r"><h2 class="section-heading">Getting help in R<a class="anchor" aria-label="anchor" href="#getting-help-in-r"></a>
+</h2>
+<hr class="half-width"><p>R provides access to in-built documentation on any R function. To
+access this information, you can use the <code>help()</code> function,
+where you input the name of the function within the brackets of the
+aforementioned function. For example, if you want to look up the
+documentation on the <code>mean</code> function, which calculates the
+average of a calculation, you enter <code>help(mean)</code> in the
+terminal and press <code>Enter</code>.</p>
+<div class="codewrapper sourceCode" id="cb14">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">help</span><span class="op">(</span><span class="va">mean</span><span class="op">)</span></span></code></pre>
+</div>
+<p>The R documentation, which includes a brief description of the
+function, the arguments that can be inputted in the <code>mean</code>
+function, as well as some examples of how the function is used, will
+show up in the Help pane on the right-hand side of the RStudio
+environment. As a shortcut to the <code>help()</code> function, you can
+use the <code>?</code> help operator to look up the same documentation
+in this way:</p>
+<div class="codewrapper sourceCode" id="cb15">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="op">?</span><span class="va">mean</span></span></code></pre>
+</div>
+<p>The above works well if you know the name of the function you want to
+look up. However, sometimes, one may be unsure of the exact name of a
+function. In this case, the <code>help.search()</code> function comes in
+handy to search for functions if you can remember a keyword. This
+function will search through all the R documentation for functions and
+packages which contain the keyword inputted, and will display the
+results in the Help pane as links to all functions and packages
+contatining the keyword.</p>
+<div class="codewrapper sourceCode" id="cb16">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">help.search</span><span class="op">(</span><span class="va">mean</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="error" tabindex="0"><code>Error in help.search(mean): argument 'pattern' must be a single character string</code></pre>
+</div>
+<p>You can also use its equivalent shortcut <code>??</code>.</p>
+<div class="codewrapper sourceCode" id="cb18">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="op">?</span><span class="op">?</span><span class="va">mean</span></span></code></pre>
+</div>
+</section><section id="getting-help-outside-of-r"><h2 class="section-heading">Getting help outside of R<a class="anchor" aria-label="anchor" href="#getting-help-outside-of-r"></a>
+</h2>
+<hr class="half-width"><p>There are numerous resources that offer helpful information on R. A
+non-exhaustive list includes:</p>
+<ul><li><a href="https://stackoverflow.com" class="external-link">Stack Overflow</a></li>
+<li><a href="https://cran.r-project.org/web/packages/available_packages_by_name.html" class="external-link">CRAN</a></li>
+<li>
+<a href="https://r4ds.hadley.nz/intro" class="external-link">R for Data Science</a> by
+Wickham, Çetinkaya-Rundel, and Grolemund</li>
+<li>
+<a href="https://posit.co/resources/cheatsheets/" class="external-link">Cheatsheets</a> of
+different R packages provided by posit (the website also contains
+cheatsheets of other programming languages e.g., Python)</li>
+<li>Other <a href="https://carpentries.org/index.html" class="external-link">The
+Carpentries</a> lessons on R</li>
+</ul><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -432,10 +509,7 @@ documentation on commands and packages</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="why-R-for-music-research.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="importing-data-in-R.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
