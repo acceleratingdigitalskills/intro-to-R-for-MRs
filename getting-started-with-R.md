@@ -1,6 +1,6 @@
 ---
 title: "Getting started with R and RStudio"
-teaching: 0
+teaching: 25
 exercises: 0
 ---
 
@@ -22,7 +22,7 @@ exercises: 0
 - Run commands in an R script
 - Learn how to install a library package
 - Learn how to load the downloaded package
-- Use the help(), help.search(), ?, and ?? commands to look up documentation 
+- Look up documentation
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -41,7 +41,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 5 milliseconds.
+Successfully installed 1 package in 4.7 milliseconds.
 ```
 
 Step 2 - Load package
@@ -102,7 +102,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.2 milliseconds.
+Successfully installed 1 package in 4 milliseconds.
 ```
 
 Step 2 - Load package
@@ -137,7 +137,7 @@ Testing out instructor notes
 
 ::::::::::::: keypoints
 
-- Use install.packages() to download and install a library package
-- Use library() to load the downloaded package
+- Use ```install.packages()``` to download and install a library package
+- Use ```library()``` to load the downloaded package
 
 :::::::::::::::::::::
