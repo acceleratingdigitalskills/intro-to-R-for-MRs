@@ -10,7 +10,6 @@ exercises: 0
 - What do the different panes in RStudio do?
 - How do I run commands in the console?
 - What is an R script and how do I create one?
-- What is a working directory?
 - What are packages?
 - How do I get help?
 
@@ -21,8 +20,6 @@ exercises: 0
 - Navigate the user interface of RStudio
 - Run commands in the console
 - Run commands in an R script
-- Set a current working directory
-- Create a directory structure for your files
 - Learn how to install a library package
 - Learn how to load the downloaded package
 - Look up documentation
@@ -108,7 +105,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.1 milliseconds.
+Successfully installed 1 package in 4 milliseconds.
 ```
 
 Step 2 - Load package
@@ -182,8 +179,6 @@ Testing out instructor notes
 
 - Write your code in an R script to be able to save it
 - Run code in an R script using `cmd` + `Enter` on Mac, `ctrl` + `Enter` on Windows/Linux, or by pressing the Run button
-- Use `setwd()` to set your working directory
-- Use `getwd()` to see your current working directory
 - Use `install.packages()` to download and install a library package
 - Use `library()` to load the downloaded package in your environment
 - Use `help()`, `help.search()` and the `?` and `??` help operators to look up documentation on commands and packages
