@@ -45,7 +45,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 4.8 milliseconds.
+Successfully installed 1 package in 4.7 milliseconds.
 ```
 
 Step 2 - Load package   
@@ -106,7 +106,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.1 milliseconds.
+Successfully installed 1 package in 4 milliseconds.
 ```
 
 Step 2 - Load package
@@ -152,11 +152,7 @@ The above works well if you know the name of the function you want to look up. H
 
 
 ```r
-help.search(mean)
-```
-
-```{.error}
-Error in help.search(mean): argument 'pattern' must be a single character string
+help.search("mean")
 ```
 
 You can also use its equivalent shortcut `??`.
