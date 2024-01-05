@@ -102,7 +102,7 @@ The R documentation, which includes a brief description of the function, the arg
 The above works well if you know the name of the function you want to look up. However, sometimes, one may be unsure of the exact name of a function. In this case, the `help.search()` function comes in handy to search for functions if you can remember a keyword. This function will search through all the R documentation for functions and packages which contain the keyword inputted, and will display the results in the Help pane as links to all functions and packages contatining the keyword.
 
 ```{r}
-help.search(mean)
+help.search("mean")
 ```
 
 You can also use its equivalent shortcut `??`.
