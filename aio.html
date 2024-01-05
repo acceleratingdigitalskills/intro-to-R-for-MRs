@@ -205,7 +205,19 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="importing-data-in-R.html">3. Importing data in R</a>
+        <a href="navigating-the-space.html">3. Navigating your working space</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="importing-data-in-R.html">4. Importing data in R</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -431,7 +443,7 @@ your R environment.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Step 1 - Install package</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -572,7 +584,69 @@ documentation on commands and packages</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section><section id="aio-importing-data-in-R"><p>Content from <a href="importing-data-in-R.html">Importing data in R</a></p>
+</section></section><section id="aio-navigating-the-space"><p>Content from <a href="navigating-the-space.html">Navigating your working space</a></p>
+<hr>
+<p>Last updated on 2024-01-05 |
+        
+        <a href="https://github.com/carpentries/workbench-template-rmd/edit/main/episodes/navigating-the-space.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is a working directory?</li>
+<li>How do I set up a new working directory?</li>
+<li>How do I create new directories?</li>
+<li>How do I check what files are in my directory?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Set a working directory</li>
+<li>Confirm the current working directory</li>
+<li>Create a directory structure</li>
+<li>Navigate through your directory</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>The term ‘directory’ in R has the same meaning as the common term
+‘folder’</li>
+<li>Use <code>getwd()</code> to check your current working
+directory</li>
+<li>Establish a new working directory with <code>setwd()</code>
+</li>
+<li>Create new directories using
+<code>dir.create("nameofnewdirectoryhere")</code> or through the
+navigation pane</li>
+<li>Use <code>list.files()</code> to view all files in your working
+directory</li>
+</ul>
+</div>
+</div>
+</div></section><section id="aio-importing-data-in-R"><p>Content from <a href="importing-data-in-R.html">Importing data in R</a></p>
 <hr>
 <p>Last updated on 2023-12-12 |
         
