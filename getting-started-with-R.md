@@ -41,7 +41,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 4.7 milliseconds.
+Successfully installed 1 package in 5.2 milliseconds.
 ```
 
 Step 2 - Load package
@@ -102,7 +102,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4 milliseconds.
+Successfully installed 1 package in 4.3 milliseconds.
 ```
 
 Step 2 - Load package
@@ -114,7 +114,7 @@ library(ggplot2)
 :::::::::::::::
 :::::::::::::::::::::::::::::::::
 
-Let's have a look at our loaded packages. To view all packages loaded in our R environment, run the following command ```(.packages())```
+Let's have a look at our loaded packages. To view all packages loaded in our R environment, run the following command `(.packages())`
 
 What is the output?
 
@@ -137,7 +137,7 @@ Testing out instructor notes
 
 ::::::::::::: keypoints
 
-- Use ```install.packages()``` to download and install a library package
-- Use ```library()``` to load the downloaded package
+- Use `install.packages()` to download and install a library package
+- Use `library()` to load the downloaded package
 
 :::::::::::::::::::::
