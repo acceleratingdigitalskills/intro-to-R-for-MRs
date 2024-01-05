@@ -29,9 +29,10 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to extend R's capability, depending on what you want to use it for. Our persona wants to read a huge dataset and then be able to manipulate the data, by subsetting parts of it, to have a closer look at certain elements. The dplyr package is very useful for this so we want to install and load it in our R environment. To do so, we need to following the next steps: 
+Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to help extend R's capability, depending on what you want to use it for. Our persona wants to read a huge dataset and then be able to manipulate the data, by subsetting parts of it, to have a closer look at certain elements. The `dplyr` package is very useful for this so we want to install and load it in our R environment. To do so, we need to following the next steps: 
 
-Step 1 - Install the package
+Step 1 - Install the package   
+
 
 ```r
 install.packages('dplyr')
@@ -47,7 +48,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 Successfully installed 1 package in 4.8 milliseconds.
 ```
 
-Step 2 - Load package
+Step 2 - Load package   
 
 
 ```r
@@ -75,7 +76,7 @@ The following objects are masked from 'package:base':
 
 ### Exercise: Install and load packages
 
-Further on, our persona will want to visualise the number of songwriters per century by gender. For this, we need to install and load the ggplot2 package. Complete the following code to first install the ggplot2 package and then load the package in your R environment.
+Further on, our persona will want to visualise the number of songwriters per century by gender. For this, we need to install and load the `ggplot2` package. Complete the following code to first install the `ggplot2` package and then load the package in your R environment.
 
 Step 1 - Install package
 
@@ -131,6 +132,49 @@ What is the output?
 [7] "datasets"  "methods"   "base"     
 ```
 
+## Getting help in R
+
+R provides access to in-built documentation on any R function. To access this information, you can use the `help()` function, where you input the name of the function within the brackets of the aforementioned function. For example, if you want to look up the documentation on the `mean` function, which calculates the average of a calculation, you enter `help(mean)` in the terminal and press `Enter`.
+
+
+```r
+help(mean)
+```
+
+The R documentation, which includes a brief description of the function, the arguments that can be inputted in the `mean` function, as well as some examples of how the function is used, will show up in the Help pane on the right-hand side of the RStudio environment. As a shortcut to the `help()` function, you can use the `?` help operator to look up the same documentation in this way:
+
+
+```r
+?mean
+```
+
+The above works well if you know the name of the function you want to look up. However, sometimes, one may be unsure of the exact name of a function. In this case, the `help.search()` function comes in handy to search for functions if you can remember a keyword. This function will search through all the R documentation for functions and packages which contain the keyword inputted, and will display the results in the Help pane as links to all functions and packages contatining the keyword.
+
+
+```r
+help.search(mean)
+```
+
+```{.error}
+Error in help.search(mean): argument 'pattern' must be a single character string
+```
+
+You can also use its equivalent shortcut `??`.
+
+
+```r
+??mean
+```
+
+## Getting help outside of R 
+
+There are numerous resources that offer helpful information on R. A non-exhaustive list includes: 
+
+- [Stack Overflow](https://stackoverflow.com)
+- [CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html)
+- [R for Data Science](https://r4ds.hadley.nz/intro) by Wickham, Çetinkaya-Rundel, and Grolemund
+- [Cheatsheets](https://posit.co/resources/cheatsheets/) of different R packages provided by posit (the website also contains cheatsheets of other programming languages e.g., Python)
+- Other [The Carpentries](https://carpentries.org/index.html) lessons on R
 
 :::::::::::: instructor
 
