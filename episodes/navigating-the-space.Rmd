@@ -21,3 +21,13 @@ exercises: 0
 - Navigate through your directory
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::: keypoints
+
+- The term 'directory' in R has the same meaning as the common term 'folder' 
+- Use `getwd()` to check your current working directory
+- Establish a new working directory with `setwd()`
+- Create new directories using `dir.create("nameofnewdirectoryhere")` or through the navigation pane
+- Use `list.files()` to view all files in your working directory
+
+:::::::::::::::::::::
