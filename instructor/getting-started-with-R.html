@@ -258,6 +258,7 @@
 <li>What do the different panes in RStudio do?</li>
 <li>How do I run commands in the console?</li>
 <li>What is an R script and how do I create one?</li>
+<li>What is a working directory?</li>
 <li>What are packages?</li>
 <li>How do I get help?</li>
 </ul></div>
@@ -270,6 +271,8 @@
 <ul><li>Navigate the user interface of RStudio</li>
 <li>Run commands in the console</li>
 <li>Run commands in an R script</li>
+<li>Set a current working directory</li>
+<li>Create a directory structure for your files</li>
 <li>Learn how to install a library package</li>
 <li>Learn how to load the downloaded package</li>
 <li>Look up documentation</li>
@@ -302,7 +305,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 5.2 milliseconds.</code></pre>
+Successfully installed 1 package in 4.8 milliseconds.</code></pre>
 </div>
 <p>Step 2 - Load package</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -373,7 +376,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.3 milliseconds.</code></pre>
+Successfully installed 1 package in 4.1 milliseconds.</code></pre>
 </div>
 <p>Step 2 - Load package</p>
 <div class="codewrapper sourceCode" id="cb11">
@@ -423,9 +426,19 @@ in our R environment, run the following command
 <h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
-<ul><li>Use <code>install.packages()</code> to download and install a
+<ul><li>Write your code in an R script to be able to save it</li>
+<li>Run code in an R script using <code>cmd</code> + <code>Enter</code>
+on Mac, <code>ctrl</code> + <code>Enter</code> on Windows/Linux, or by
+pressing the Run button</li>
+<li>Use <code>setwd()</code> to set your working directory</li>
+<li>Use <code>getwd()</code> to see your current working directory</li>
+<li>Use <code>install.packages()</code> to download and install a
 library package</li>
-<li>Use <code>library()</code> to load the downloaded package</li>
+<li>Use <code>library()</code> to load the downloaded package in your
+environment</li>
+<li>Use <code>help()</code>, <code>help.search()</code> and the
+<code>?</code> and <code>??</code> help operators to look up
+documentation on commands and packages</li>
 </ul></div>
 </div>
 </div>
