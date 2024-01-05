@@ -1,0 +1,23 @@
+---
+title: "Navigating your working space"
+teaching: 0
+exercises: 0
+---
+
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- What is a working directory?
+- How do I set up a new working directory?
+- How do I create new directories?
+- How do I check what files are in my directory?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Set a working directory
+- Confirm the current working directory
+- Create a directory structure
+- Navigate through your directory
+
+::::::::::::::::::::::::::::::::::::::::::::::::
