@@ -1,6 +1,6 @@
 ---
 title: "Getting started with R and RStudio"
-teaching: 0
+teaching: 25
 exercises: 0
 ---
 
@@ -22,7 +22,7 @@ exercises: 0
 - Run commands in an R script
 - Learn how to install a library package
 - Learn how to load the downloaded package
-- Use the help(), help.search(), ?, and ?? commands to look up documentation 
+- Look up documentation
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -90,7 +90,7 @@ Testing out instructor notes
 
 ::::::::::::: keypoints
 
-- Use install.packages() to download and install a library package
-- Use library() to load the downloaded package
+- Use ```install.packages()``` to download and install a library package
+- Use ```library()``` to load the downloaded package
 
 :::::::::::::::::::::
