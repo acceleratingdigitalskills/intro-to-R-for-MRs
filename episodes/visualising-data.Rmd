@@ -6,7 +6,11 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- What are some descriptive statistics of my data set that I can compute in R?
+-	What are the three main components of a ggplot?
+-	How do I create a scatterplot, boxplot, and a bar graph to visualise my data?
+-	How can I create separate plots at once based on a variable of my data?
+-	How do I customise my plots to add axes labels and a title? 
+-	How do I save my plots in png format?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
