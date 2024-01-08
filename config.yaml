@@ -65,6 +65,7 @@ episodes:
 - getting-started-with-R.Rmd
 - navigating-the-space.Rmd
 - reading-data-in-R.Rmd
+- inspecting-data.Rmd
 
 # Information for Learners
 learners: 
