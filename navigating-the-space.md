@@ -1,5 +1,5 @@
 ---
-title: "Navigating your working space"
+title: "Navigating the workspace"
 teaching: 0
 exercises: 0
 ---
