@@ -24,4 +24,14 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::::::::::: keypoints
+
+- R can read multiple file types
+- Use `read.csv()` to import a csv data file in R
+- Use `read_excel()` from the `readxl` package to import an Excel data file in R
+- Specify how to deal with missing values using the `na.strings` argument in `read.csv()` when importing a csv file or the `na` argument in `read_excel()` when importing an Excel file
+- Use the assign operator `<-` to give a name to your data set
+- Use `print` to display the contents of your object in the R console
+
+:::::::::::::::::::::
 
