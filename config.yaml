@@ -64,7 +64,7 @@ episodes:
 - why-R-for-music-research.Rmd
 - getting-started-with-R.Rmd
 - navigating-the-space.Rmd
-- importing-data-in-R.Rmd
+- reading-data-in-R.Rmd
 
 # Information for Learners
 learners: 
