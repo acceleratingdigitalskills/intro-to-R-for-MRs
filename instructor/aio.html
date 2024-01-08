@@ -239,6 +239,30 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="data-cleaning.html">6. Cleaning your data</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="survey-data-analysis.html">7. Analysing survey data</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -459,7 +483,7 @@ your R environment.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Step 1 - Install package</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -578,7 +602,7 @@ Carpentries</a> lessons on R</li>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Testing out instructor notes</p>
 </div>
@@ -807,6 +831,144 @@ operator</li>
 <li>Use <code>[]</code> to subset data from a data frame</li>
 <li>Use <code>str()</code> to inspect the internal structure of the data
 frame</li>
+</ul>
+</div>
+</div>
+</div></section><section id="aio-data-cleaning"><p>Content from <a href="data-cleaning.html">Cleaning your data</a></p>
+<hr>
+<p>Last updated on 2024-01-08 |
+        
+        <a href="https://github.com/carpentries/workbench-template-rmd/edit/main/episodes/data-cleaning.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What are some steps I should take to clean my data before use?</li>
+<li>How do I identify and deal with missing values in the data?</li>
+<li>How do I save my cleaned data into a new data file?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Eliminate irrelevant data</li>
+<li>Remove data with a low completion rate</li>
+<li>Rename data columns which have lengthy or confusing names</li>
+<li>Identify missing values in the data</li>
+<li>Add a <em>Participant ID</em> column</li>
+<li>Save the cleaned data as a new data file</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Use the <code>select()</code> function from the <code>dplyr</code>
+package to remove unneccesary data columns</li>
+<li>Use the <code>filter()</code> function to omit data based on a
+specific parameter</li>
+<li>Use <code>is.na()</code> to identify missing values in the data</li>
+<li>Use <code>na.omit()</code> to exclude rows with any missing
+data</li>
+<li>Use <code>write.csv()</code> to save the cleaned data as a new data
+file</li>
+</ul>
+</div>
+</div>
+</div></section><section id="aio-survey-data-analysis"><p>Content from <a href="survey-data-analysis.html">Analysing survey data</a></p>
+<hr>
+<p>Last updated on 2024-01-08 |
+        
+        <a href="https://github.com/carpentries/workbench-template-rmd/edit/main/episodes/survey-data-analysis.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What are some descriptive statistics of my data set that I can
+compute in R?</li>
+<li>How do I calculate the number of participants in my survey
+data?</li>
+<li>How do I calculate the mean age of participants in my survey
+data?</li>
+<li>How do I found out what age are the youngest and oldest participants
+in my survey data?</li>
+<li>How do I compare scores of participants based on their
+musicianship?</li>
+<li>How do I carry out a t-test?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Calculate the number of participants in your survey data</li>
+<li>Calculate the mean age and standard deviation of participants</li>
+<li>Determine the number of musicians and non-musicians that took part
+in your survey</li>
+<li>Calculate the average scores of musicians and non-musicians
+separately</li>
+<li>Carry out a t-test to find out if musicianship had a statistically
+significant effect on how participants scored on their tasks they had to
+carry out</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Use <code>mean()</code> and <code>sd()</code> to calculate the mean
+and standard deviation of a variable</li>
+<li>Use <code>min()</code> to identify the minimum value of a particular
+variable</li>
+<li>Use <code>max()</code> to identify the maximum value of a particular
+variable</li>
+<li>Use <code>filter()</code> to subset your data by a specific
+variable</li>
+<li>Use the <code>t.test</code> function with the following syntax
+<code>t.test(DependentVariable ~ IndependentVariable, data)</code> to
+compare whether the means of two groups are statistically different or
+not</li>
 </ul>
 </div>
 </div>

@@ -66,6 +66,8 @@ episodes:
 - navigating-the-space.Rmd
 - reading-data-in-R.Rmd
 - inspecting-data.Rmd
+- data-cleaning.Rmd
+- survey-data-analysis.Rmd
 
 # Information for Learners
 learners: 
