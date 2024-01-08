@@ -85,6 +85,9 @@
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/profiles.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/reading-data-in-R.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/reference.html</loc>
   </url>
   <url>
@@ -107,6 +110,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/reading-data-in-R.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/reference.html</loc>
