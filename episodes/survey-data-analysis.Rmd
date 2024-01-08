@@ -30,6 +30,7 @@ exercises: 0
 - Use `mean()` and `sd()` to calculate the mean and standard deviation of a variable
 - Use `min()` to identify the minimum value of a particular variable
 - Use `max()` to identify the maximum value of a particular variable
+- Include the `na.rm = TRUE` argument in functions when possible for the calculation to ignore missing values in the data
 - Use `filter()` to subset your data by a specific variable
 - Use the `t.test` function with the following syntax `t.test(DependentVariable ~ IndependentVariable, data)` to compare whether the means of two groups are statistically different or not 
 
