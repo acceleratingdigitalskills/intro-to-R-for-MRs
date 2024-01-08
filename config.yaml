@@ -68,6 +68,7 @@ episodes:
 - inspecting-data.Rmd
 - data-cleaning.Rmd
 - survey-data-analysis.Rmd
+- visualising-data.Rmd
 
 # Information for Learners
 learners: 
