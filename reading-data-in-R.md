@@ -9,7 +9,7 @@ exercises: 0
 - Which data files can be imported in R?
 - How are files in Excel and csv format displayed in R?
 - How does R deal with missing values?
--	How do I give names to the data set imported?
+- How do I give names to the data set imported?
 - How do I display the imported data?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
