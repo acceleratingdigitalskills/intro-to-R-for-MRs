@@ -423,8 +423,18 @@ not</li>
 </ul></section><section id="visualising-data"><h2 class="section-heading"><a href="visualising-data.html">Visualising survey data with ggplot2</a></h2>
 <hr class="half-width">
 <ul>
-<li>Use <code>mean()</code> and <code>sd()</code> to calculate the mean
-and standard deviation of a variable</li>
+<li>A ggplot has 3 main components: data, aesthetics, and geom</li>
+<li>A ggplot may be customised by adding layers of elements</li>
+<li>Use <code>geom_point()</code> to create a scatterplot,
+<code>geom_boxplot()</code> for a boxplot, and <code>geom_bar()</code>
+for bar graphs</li>
+<li>Use <code>facet_wrap(~variable)</code> to create separate plots
+simultaneously based on the unique values of a variable</li>
+<li>Give your plot a title with <code>ggplot('title here')</code> and
+label your axes with <code>ylab()</code> and <code>xlab()</code>
+</li>
+<li>Save your plot with <code>ggsave()</code>
+</li>
 </ul></section>
 </div>
     </main>
