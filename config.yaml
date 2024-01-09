@@ -69,6 +69,7 @@ episodes:
 - data-cleaning.Rmd
 - survey-data-analysis.Rmd
 - visualising-data.Rmd
+- best-practices.Rmd
 
 # Information for Learners
 learners: 
