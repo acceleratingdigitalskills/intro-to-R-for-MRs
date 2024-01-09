@@ -22,6 +22,9 @@
     <loc>https://carpentries.github.io/workbench-template-rmd/aio.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/another-case-study.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/best-practices.html</loc>
   </url>
   <url>
@@ -62,6 +65,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/aio.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/another-case-study.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/best-practices.html</loc>
