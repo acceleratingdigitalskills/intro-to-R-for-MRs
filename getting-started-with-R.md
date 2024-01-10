@@ -26,6 +26,17 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## The difference between RStudio and R
+
+RStudio is an open-source programme and can be described as an Integrated Development Environment (IDE). One can view RStudio as a tool which helps make working with R more user-friendly. Some of the advantages of using RStudio include an autocompletion function, being able to write code in scripts and save them to be used later on, save objects/variables in the environment, visualise objects, and access to in-depth help documentation on R functions. On the other hand, R on its own comes with a basic interface which is essentially a command-line interface.
+
+During this lesson, we will use RStudio to write out R code, navigate different files on our computer, read data files, inspect objects we create, and visualise plots that we will produce.
+
+## Getting around RStudio 
+
+
+## Library packages
+
 Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to help extend R's capability, depending on what you want to use it for. Packages can be downloaded from the [Comprehensive R Archive Network](https://cran.r-project.org) known as CRAN.
 
 Our persona wants to read a huge dataset and then be able to manipulate the data, by subsetting parts of it, to have a closer look at certain elements. The `dplyr` package is very useful for this so we want to download it. To do so, we first need to install it and then load it into our R environment by following these two steps: 
