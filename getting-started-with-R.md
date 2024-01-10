@@ -28,7 +28,7 @@ exercises: 0
 
 ## The difference between RStudio and R
 
-RStudio is an open-source programme and can be described as an Integrated Development Environment (IDE). One can view RStudio as a tool which helps make working with R more user-friendly. Some of the advantages of using RStudio include an autocompletion function, being able to write code in scripts and save them to be used later on, save objects/variables in the environment, visualise objects, and access to in-depth help documentation on R functions. On the other hand, R on its own comes with a basic interface which is essentially a command-line interface.
+**RStudio** is an open-source programme and can be described as an Integrated Development Environment (IDE). One can view RStudio as a tool which helps make working with R more user-friendly. Some of the advantages of using RStudio include an autocompletion function, being able to write code in scripts and save them to be used later on, save objects/variables in the environment, visualise objects, and access to in-depth help documentation on R functions. On the other hand, **R** on its own comes with a basic interface which is essentially a command-line interface.
 
 During this lesson, we will use RStudio to write out R code, navigate different files on our computer, read data files, inspect objects we create, and visualise plots that we will produce.
 
@@ -63,7 +63,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 5.1 milliseconds.
+Successfully installed 1 package in 5 milliseconds.
 ```
 
 Step 2 - Load package   
