@@ -166,7 +166,10 @@
         
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#getting-help-in-r">Getting help in R</a></li>
+        <ul><li><a href="#the-difference-between-rstudio-and-r">The difference between RStudio and R</a></li>
+<li><a href="#getting-around-rstudio">Getting around RStudio</a></li>
+<li><a href="#library-packages">Library packages</a></li>
+<li><a href="#getting-help-in-r">Getting help in R</a></li>
 <li><a href="#getting-help-outside-of-r">Getting help outside of R</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -347,7 +350,25 @@
 </div>
 </div>
 </div>
-<p>Default R comes with what are called base functions. However, R users
+<section id="the-difference-between-rstudio-and-r"><h2 class="section-heading">The difference between RStudio and R<a class="anchor" aria-label="anchor" href="#the-difference-between-rstudio-and-r"></a>
+</h2>
+<hr class="half-width"><p>RStudio is an open-source programme and can be described as an
+Integrated Development Environment (IDE). One can view RStudio as a tool
+which helps make working with R more user-friendly. Some of the
+advantages of using RStudio include an autocompletion function, being
+able to write code in scripts and save them to be used later on, save
+objects/variables in the environment, visualise objects, and access to
+in-depth help documentation on R functions. On the other hand, R on its
+own comes with a basic interface which is essentially a command-line
+interface.</p>
+<p>During this lesson, we will use RStudio to write out R code, navigate
+different files on our computer, read data files, inspect objects we
+create, and visualise plots that we will produce.</p>
+</section><section id="getting-around-rstudio"><h2 class="section-heading">Getting around RStudio<a class="anchor" aria-label="anchor" href="#getting-around-rstudio"></a>
+</h2>
+<hr class="half-width"></section><section id="library-packages"><h2 class="section-heading">Library packages<a class="anchor" aria-label="anchor" href="#library-packages"></a>
+</h2>
+<hr class="half-width"><p>Default R comes with what are called base functions. However, R users
 have also created other packages which hold different tools that can be
 added to R, to help extend R’s capability, depending on what you want to
 use it for. Packages can be downloaded from the <a href="https://cran.r-project.org" class="external-link">Comprehensive R Archive Network</a>
@@ -427,7 +448,7 @@ your R environment.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Step 1 - Install package</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -472,7 +493,7 @@ in our R environment, run the following command:</p>
 <pre class="output" tabindex="0"><code>[1] "ggplot2"   "dplyr"     "stats"     "graphics"  "grDevices" "utils"    
 [7] "datasets"  "methods"   "base"     </code></pre>
 </div>
-<section id="getting-help-in-r"><h2 class="section-heading">Getting help in R<a class="anchor" aria-label="anchor" href="#getting-help-in-r"></a>
+</section><section id="getting-help-in-r"><h2 class="section-heading">Getting help in R<a class="anchor" aria-label="anchor" href="#getting-help-in-r"></a>
 </h2>
 <hr class="half-width"><p>R provides access to in-built documentation on any R function. To
 access this information, you can use the <code>help()</code> function,
