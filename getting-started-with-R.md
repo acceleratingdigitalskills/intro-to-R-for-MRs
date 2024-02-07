@@ -48,7 +48,7 @@ Default Layout:
   + **Viewer**: The Viewer tab displays web content generated through the session. 
   + **Presentation**: Any HTML slides generated during the session will be displayed in this tab.
 
-*Note.* During this lesson we will not be generating any HTML content, therefore, we will not be usgin the Viewer and Presentation tabs. 
+*Note.* During this lesson we will not be generating any HTML content, therefore, we will not be using the Viewer and Presentation tabs. 
 
 ## Library packages
 
@@ -70,7 +70,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 5 milliseconds.
+Successfully installed 1 package in 4.8 milliseconds.
 ```
 
 Step 2 - Load package   
@@ -131,7 +131,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.2 milliseconds.
+Successfully installed 1 package in 4.3 milliseconds.
 ```
 
 Step 2 - Load package
