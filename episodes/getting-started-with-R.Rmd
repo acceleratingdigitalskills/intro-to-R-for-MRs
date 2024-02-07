@@ -40,8 +40,15 @@ Default Layout:
 
 - **Console Pane** (left side of screen): This is the interface you would use if you were working in R rather than RStudio. The Console is used to type in and run commands, with the output being immediately displayed in the Console. A `>` symbol and a blinking cursor show you where to input the code. To run commands in the Console, you have to type in the command and press the `Enter` key. Code typed directly in the console will not be saved, but you can view it in the History Pane (top right of screen - History tab is the one next to Environment). The Terminal tab next to the Console presents you with a command-line interface which you can use to access your computer's operating sysem. 
 - **Environment Pane** (top right of screen): Any data files you read (or "import") into RStudio will show up here, together with any objects you create in the R environment.
-- **Navigation Pane** (bottom right of screen): The Navigation Pane has multiple tabs. 
+- **Navigation Pane** (bottom right of screen): The Navigation Pane has multiple tabs.
+  + **Files**: This tab allows you to view and navigate through the files you have in your current working directory as well as on your computer. New folders and files can be created and existing ones can also be deleted. Other options may be found by clicking on the gear icon.
+  + **Plots**: Plots (e.g., bar graphs, scatter plots etc.) created during the R session will be shown in this window.
+  + **Packages**: Library packages (explained later in this episode) currently installed are displayed. A ticked box next to a library package represents packages which are loaded in the environment. Library packages can also be installed and/or updated by the respective buttons. 
+  + **Help**: Any package or function documentation looked up will be displayed in this tab.
+  + **Viewer**: The Viewer tab displays web content generated through the session. 
+  + **Presentation**: Any HTML slides generated during the session will be displayed in this tab.
 
+*Note.* During this lesson we will not be generating any HTML content, therefore, we will not be usgin the Viewer and Presentation tabs. 
 
 ## Library packages
 
