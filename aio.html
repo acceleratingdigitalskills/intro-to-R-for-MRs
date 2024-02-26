@@ -464,7 +464,7 @@ The Console is used to type in and run commands, with the output being
 immediately displayed in the Console. A <code>&gt;</code> symbol and a
 blinking cursor show you where to input the code. To run commands in the
 Console, you have to type in the command and press the
-<code>Enter</code> key. Code typed directly in the console will not be
+<code>Return</code> key. Code typed directly in the console will not be
 saved, but you can view it in the History Pane (top right of screen -
 History tab is the one next to Environment). The Terminal tab next to
 the Console presents you with a command-line interface which you can use
@@ -628,7 +628,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 4.9 milliseconds.</code></pre>
+Successfully installed 1 package in 5 milliseconds.</code></pre>
 </div>
 <p>Step 2 - Load package</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -665,9 +665,9 @@ Attaching package: 'dplyr'</code></pre>
 <h3 class="callout-title">Exercise: Install and load packages<a class="anchor" aria-label="anchor" href="#exercise-install-and-load-packages"></a>
 </h3>
 <div class="callout-content">
-<p>Further on, our persona will want to visualise the number of
-songwriters per century by gender. For this, we need to install and load
-the <code>ggplot2</code> package. Complete the following code to first
+<p>Further on, Jamie will want to visualise the number of songwriters
+per century by gender. For this, we need to install and load the
+<code>ggplot2</code> package. Complete the following code to first
 install the <code>ggplot2</code> package and then load the package in
 your R environment.</p>
 <p>Step 1 - Install package</p>
@@ -700,7 +700,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.7 milliseconds.</code></pre>
+Successfully installed 1 package in 4.8 milliseconds.</code></pre>
 </div>
 <p>Step 2 - Load package</p>
 <div class="codewrapper sourceCode" id="cb11">
@@ -736,12 +736,12 @@ where you input the name of the function within the brackets of the
 aforementioned function. For example, if you want to look up the
 documentation on the <code>mean</code> function, which calculates the
 average of a calculation, you enter <code>help(mean)</code> in the
-terminal and press <code>Enter</code>.</p>
+terminal and press <code>Return</code>.</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">help</span><span class="op">(</span><span class="va">mean</span><span class="op">)</span></span></code></pre>
+<code class="sourceCode R"><span><span class="fu">help</span><span class="op">(</span><span class="st">"mean"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>The R documentation, which includes a brief description of the
 function, the arguments that can be inputted in the <code>mean</code>
@@ -756,26 +756,82 @@ in this way:</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">?</span><span class="va">mean</span></span></code></pre>
 </div>
-<p>The above works well if you know the name of the function you want to
-look up. However, sometimes, one may be unsure of the exact name of a
-function. In this case, the <code>help.search()</code> function comes in
-handy to search for functions if you can remember a keyword. This
-function will search through all the R documentation for functions and
-packages which contain the keyword inputted, and will display the
-results in the Help pane as links to all functions and packages
-contatining the keyword.</p>
+<div id="exercise-getting-help" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-getting-help" class="callout-inner">
+<h3 class="callout-title">Exercise: Getting help<a class="anchor" aria-label="anchor" href="#exercise-getting-help"></a>
+</h3>
+<div class="callout-content">
+<p>Jamie wants to look up the <code>mean</code> command, but instead of
+using <code>help()</code>, Jamie used <code>help.search()</code>.
+However, this command outputted different search results. Can you help
+Jamie understand the difference in results?</p>
+<ul>
+<li>Run <code>help("mean")</code> in the console, and look at the
+results in the Help pane</li>
+<li>Do the same with the <code>help.search("mean")</code> command</li>
+<li>What is the difference?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Running the two commands consecutively:</p>
 <div class="codewrapper sourceCode" id="cb16">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">help</span><span class="op">(</span><span class="st">"mean"</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">help.search</span><span class="op">(</span><span class="st">"mean"</span><span class="op">)</span></span></code></pre>
 </div>
-<p>You can also use its equivalent shortcut <code>??</code>.</p>
-<div class="codewrapper sourceCode" id="cb17">
+<p>The <code>help("mean")</code> command gave Jamie the relevant help
+page for the <code>mean</code> function. On the other hand, the
+<code>help.search("mean")</code> function gave Jamie a list of links to
+help pages, vignettes, and code demonstrations where the keyword
+<code>mean</code> was present.</p>
+</div>
+</div>
+</div>
+</div>
+<p>The <code>help("mean")</code> command works well if you know the
+exact name of the function you want to look up. However, sometimes, one
+may be unsure of the exact name of a function. This is where the
+<code>help.search()</code> function comes in handy. This function will
+search through all R documentation, as well as installed packages and
+online resources for functions and packages which contain the keyword
+inputted, and will display the results in the Help pane as links to all
+functions and packages containing the keyword.</p>
+<div id="a-shortcut" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="a-shortcut" class="callout-inner">
+<h3 class="callout-title">A shortcut<a class="anchor" aria-label="anchor" href="#a-shortcut"></a>
+</h3>
+<div class="callout-content">
+<p>Instead of <code>help.search()</code>, you can also use its
+equivalent shortcut <code>??</code>.</p>
+<div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="op">?</span><span class="op">?</span><span class="va">mean</span></span></code></pre>
+</div>
+</div>
+</div>
 </div>
 </section><section id="getting-help-outside-of-r"><h2 class="section-heading">Getting help outside of R<a class="anchor" aria-label="anchor" href="#getting-help-outside-of-r"></a>
 </h2>
@@ -805,9 +861,9 @@ Carpentries</a> lessons on R</li>
 <div class="callout-content">
 <ul>
 <li>Write your code in an R script to be able to save it</li>
-<li>Run code in an R script using <code>cmd</code> + <code>Enter</code>
-on Mac, <code>ctrl</code> + <code>Enter</code> on Windows/Linux, or by
-pressing the Run button</li>
+<li>Run code in an R script using <code>Command</code> +
+<code>Return</code> on Mac, <code>Ctrl</code> + <code>Return</code> on
+Windows/Linux, or by pressing the Run button</li>
 <li>Use <code>install.packages()</code> to download and install a
 library package</li>
 <li>Use <code>library()</code> to load the downloaded package in your
