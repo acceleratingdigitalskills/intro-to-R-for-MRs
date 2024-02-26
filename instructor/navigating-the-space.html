@@ -397,11 +397,21 @@ already exists on their device, called <code>my-r-project</code>.</p>
 <p>To do so, Jamie needs to tell R to change the working directory to
 <code>my-r-project</code> by using the <code>setwd()</code> function and
 typing in the pathname of the folder.</p>
-<pre><code><span><span class="fu">setwd</span><span class="op">(</span><span class="st">"/Users/jamie/Desktop/my-r-project"</span><span class="op">)</span></span></code></pre>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">setwd</span><span class="op">(</span><span class="st">"/Users/jamie/Desktop/my-r-project"</span><span class="op">)</span></span></code></pre>
+</div>
 <p>When this command is run, no output will be shown in the Console. We
 can use the <code>getwd()</code> command to check whether R has set the
 desired folder as the working directory.</p>
-<pre><code><span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
 <p>Jamie has now confirmed that R is seeing the
 <code>my-r-project</code> as the working directory.</p>
 <div id="good-to-know" class="callout callout">
@@ -458,14 +468,24 @@ folder structure to organise your files is recommended.</p>
 in RStudio.</p>
 <p>Jamie will use the <code>dir.create()</code> function to create the
 desired folder (directory).</p>
-<pre><code><span><span class="fu">dir.create</span><span class="op">(</span><span class="st">"data"</span><span class="op">)</span></span></code></pre>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">dir.create</span><span class="op">(</span><span class="st">"data"</span><span class="op">)</span></span></code></pre>
+</div>
 <p>Jamie has now created the first folder within the working directory.
 However, Jamie is not sure whether this was done correctly, as this
 command did not output a result in the Console. To confirm that the
 <code>data</code> folder was created, Jamie used the
 <code>list.files()</code> function, which will display all items in the
 working directory.</p>
-<pre><code><span><span class="fu">list.files</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">list.files</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
 <div id="exercise-can-you-help-jamie-create-the-desired-directory-structure" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -492,12 +512,21 @@ desired directory structure?<a class="anchor" aria-label="anchor" href="#exercis
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Create the folders using <code>dir.create()</code>
 </li>
-</ol><pre><code>dir.create("figures")
-dir.create("scripts)
-dir.create("munge")
-dir.create("documents")</code></pre>
+</ol><div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"figures"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"scripts)</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="st">dir.create("</span>munge<span class="st">")</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="st">dir.create("</span>documents<span class="st">")</span></span></code></pre>
+</div>
 <ol start="2" style="list-style-type: decimal"><li>Check all items in your working directory</li>
-</ol><pre><code><span><span class="fu">list.files</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</ol><div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">list.files</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
 </div>
 </div>
 </div>
