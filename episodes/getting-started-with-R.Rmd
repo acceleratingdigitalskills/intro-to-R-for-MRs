@@ -200,7 +200,7 @@ The `help("mean")` command works well if you know the exact name of the function
 :::::::::::: callout
 ### A shortcut 
 
-Instead of `help.search()`, you can also use its equivalent shortcut `??`.
+Instead of `help.search()`, you can also use its equivalent shortcut `??`
 
 ```{r}
 ??mean
