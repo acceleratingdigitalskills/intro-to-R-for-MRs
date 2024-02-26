@@ -1,0 +1,11 @@
+---
+title: "Meet Alex"
+teaching: 5
+exercises: 0
+---
+
+## Say hello to Alex!
+
+Alex is a graduate student studying Music Psychology. Alex is a pianist, and also likes to dabble in music composition. Alex is comfortable using Ableton Live and Logic Pro with MIDI keystations to record and master music. Alex spent a summer interning at a Music Label. Responsibilities included entering data in an Excel spreadsheet, and producing monthly reports with average duration of listens, most listened to track, and most popular artist. Alex is comfortable carrying out these calculations in Excel.
+
+As part of the PhD, Alex is investigating the effect of background music on individuals' working memory capacity. To do so, Alex ran a survey using a Web-based survey tool, where participants . Alex has collected a sufficient number of responses, and now wants to download and analyse the data, to see whether background music had an effect on the participants' scores in particular tasks.
