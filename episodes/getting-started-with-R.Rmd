@@ -54,11 +54,11 @@ Default Layout:
 
 There are two main ways to run commands in RStudio. 
 
-**Option 1**
+**Option 1**      
 You can type your commands directly into the Console pane. After typing in your code, pressing the `Return` button on your keyboard will run the command, and R will show the result of your command below your code in the Console pane. This is a handy way to try out short lines of code. However, when the code typed in the Console pane will not be saved and will be lost once you close your RStudio session. 
 
-**Option 2**
-You can write your code and save it in a file called an R script, which will allow you to access your code in subsequent RStudio sessions, by opening up your R script. This allows you to have a record of all your code, to be used later by yourself or others. R scripts have '.R' as their file extension. Since typing up commands in an R script is similar to typing words in a text editor, pressing the 'Return' key will not run your commands (like what happens in the Console pane), but it will create a new line for you to write more code. To run the code that you type in an R script, you have to tell RStudio to push your code from the R script to the Console. Once pushed to the Console, the code will be executed, and the results of the code will appear in the Console.
+**Option 2**     
+You can write your code and save it in a file called an R script, which will allow you to access your code in subsequent RStudio sessions, by opening up your R script. This allows you to have a record of all your code, to be used later by yourself or others. R scripts have `.R` as their file extension. Since typing up commands in an R script is similar to typing words in a text editor, pressing the `Return` key will not run your commands (like what happens in the Console pane), but it will create a new line for you to write more code. To run the code that you type in an R script, you have to tell RStudio to push your code from the R script to the Console. Once pushed to the Console, the code will be executed, and the results of the code will appear in the Console.
 
 To run a line of code in your R script, make sure that your cursor is on the line of the script that you want to run, and then press the `Run` button at the top of the Editor pane. 
 
@@ -67,7 +67,7 @@ To run a line of code in your R script, make sure that your cursor is on the lin
 
 Instead of pressing the `Run` button at the top of the Editor pane, you can either: 
 
-- Press `Ctrl` + `Return' on Windows or Linux, or `Command` + `Return` on Mac
+- Press `Ctrl` + `Return` on Windows or Linux, or `Command` + `Return` on Mac
 - Select the line or lines of code you want to run, and from the Code menu, select *Run selected line(s)*
 
 :::::::::::::::::::
