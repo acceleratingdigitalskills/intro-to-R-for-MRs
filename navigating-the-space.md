@@ -37,7 +37,7 @@ Let's first check what our current working directory is.
 
 To do so, we will use the `getwd()` function (which stands for *get working directory*). 
 
-```
+``` R
 getwd()
 ```
 
