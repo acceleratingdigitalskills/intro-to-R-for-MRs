@@ -50,7 +50,7 @@ Default Layout:
 
 *Note.* During this lesson we will not be generating any HTML content, therefore, we will not be using the Viewer and Presentation tabs. 
 
-## Running commands in the console vs in an R script
+## Running commands in the Console vs in an R script
 
 There are two main ways to run commands in RStudio. 
 
@@ -72,6 +72,15 @@ Instead of pressing the `Run` button at the top of the Editor pane, you can eith
 
 :::::::::::::::::::
 
+:::::::::::::::::: callout
+### Don't forget to save your work
+
+Make sure to save your R script by either pressing the floppy disk (a small light blue and white square) icon on the Editor pane, or by selecting *Save* from the File menu at the top. On your first save, you will be prompted to give your R script a name and select the location where you want to save your file.
+
+The shortcut `Ctrl` + `s` on Windows and Linux, or `Command` + `s` can also be used to save your file. 
+
+::::::::::::::::::::
+
 ## Library packages
 
 Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to help extend R's capability, depending on what you want to use it for. Packages can be downloaded from the [Comprehensive R Archive Network](https://cran.r-project.org) known as CRAN.
@@ -92,7 +101,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 5 milliseconds.
+Successfully installed 1 package in 5.3 milliseconds.
 ```
 
 Step 2 - Load package   
@@ -147,17 +156,13 @@ install.packages('ggplot2')
 ```
 
 ```{.output}
-# Downloading packages -------------------------------------------------------
-- Downloading ggplot2 from CRAN ...             OK [4.1 Mb in 0.47s]
-Successfully downloaded 1 package in 0.83 seconds.
-
 The following package(s) will be installed:
 - ggplot2 [3.4.4]
 These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-MRs/renv/profiles/lesson-requirements/renv/library/R-4.3/x86_64-pc-linux-gnu".
 
 # Installing packages --------------------------------------------------------
-- Installing ggplot2 ...                        OK [installed binary and cached in 0.94s]
-Successfully installed 1 package in 1 second.
+- Installing ggplot2 ...                        OK [linked from cache]
+Successfully installed 1 package in 5 milliseconds.
 ```
 
 Step 2 - Load package
