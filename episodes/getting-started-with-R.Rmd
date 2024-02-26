@@ -30,7 +30,7 @@ exercises: 0
 
 **RStudio** is an open-source programme and can be described as an Integrated Development Environment (IDE). One can view RStudio as a tool which helps make working with R more user-friendly. Some of the advantages of using RStudio include an autocompletion function, being able to write code in scripts and save them to be used later on, save objects/variables in the environment, visualise objects, and access to in-depth help documentation on R functions. On the other hand, **R** on its own comes with a basic interface which is essentially a command-line interface.
 
-During this lesson, we will use RStudio to write out R code, navigate different files on our computer, read data files, inspect objects we create, and visualise plots that we will produce.
+During this lesson, we will follow Alex in the exploration of R. We will use RStudio to write out R code, navigate different files on our computer, read data files, inspect objects we create, and visualise plots that we will produce.
 
 ## Getting around RStudio 
 
@@ -101,7 +101,7 @@ The shortcut `Ctrl` + `s` on Windows and Linux, or `Command` + `s` can also be u
 
 Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to help extend R's capability, depending on what you want to use it for. Packages can be downloaded from the [Comprehensive R Archive Network](https://cran.r-project.org) known as CRAN.
 
-Our persona wants to read a huge dataset and then be able to manipulate the data, by subsetting parts of it, to have a closer look at certain elements. The `dplyr` package is very useful for this so we want to download it. To do so, we first need to install it and then load it into our R environment by following these two steps: 
+One package that we will be using is the `dplyr` package, which allows us to subset and manipulate parts of a dataset, to have a closer look at certain elements - so let's download it. To do so, we first need to install it and then load it into our R environment by following these two steps: 
 
 Step 1 - Install the package   
 
@@ -119,7 +119,7 @@ library(dplyr)
 
 ### Exercise: Install and load packages
 
-Further on, Jamie will want to visualise the number of songwriters per century by gender. For this, we need to install and load the `ggplot2` package. Complete the following code to first install the `ggplot2` package and then load the package in your R environment.
+Further on, Alex will want to create plots for some data. For this, we need to install and load the `ggplot2` package. Complete the following code to first install the `ggplot2` package and then load the package in your R environment.
 
 Step 1 - Install package
 
@@ -172,7 +172,7 @@ The R documentation, which includes a brief description of the function, the arg
 :::::::::::::::::::::: challenge
 ### Exercise: Getting help
 
-Jamie wants to look up the `mean` command, but instead of using `help()`, Jamie used `help.search()`. However, this command outputted different search results. Can you help Jamie understand the difference in results? 
+Alex wants to look up the `mean` command, but instead of using `help()`, Alex used `help.search()`. However, this command outputted different search results. Can you help Alex understand the difference in results? 
 
 - Run `help("mean")` in the console, and look at the results in the Help pane
 - Do the same with the `help.search("mean")` command
@@ -190,7 +190,7 @@ help("mean")
 help.search("mean")
 ```
 
-The `help("mean")` command gave Jamie the relevant help page for the `mean` function. On the other hand, the `help.search("mean")` function gave Jamie a list of links to help pages, vignettes, and code demonstrations where the keyword `mean` was present.
+The `help("mean")` command gave Alex the relevant help page for the `mean` function. On the other hand, the `help.search("mean")` function gave Alex a list of links to help pages, vignettes, and code demonstrations where the keyword `mean` was present.
 
 ::::::::::::::::
 ::::::::::::::::::::::::::::
