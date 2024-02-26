@@ -176,6 +176,7 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#the-working-directory">The working directory</a></li>
+<li><a href="#organise-the-working-directory">Organise the working directory</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -350,8 +351,8 @@
 work is done in an organised way by using a consistent folder structure.
 This will make it easy to find things in the future.</p>
 <p>First, Jamie needs to set up a working directory.</p>
-<div class="section level3">
-<h3 id="what-is-a-working-directory">What is a working directory?<a class="anchor" aria-label="anchor" href="#what-is-a-working-directory"></a></h3>
+<div class="section level4">
+<h4 id="what-is-a-working-directory">What is a working directory?<a class="anchor" aria-label="anchor" href="#what-is-a-working-directory"></a></h4>
 <p>The word <em>directory</em> may be viewed as another word for
 <em>folder</em>. Since one might have a lot of files and folders on
 their device, we need to let R know which directory (folder) we will be
@@ -392,12 +393,63 @@ desired line (or select multiple lines) that you want to run, and press
 </div>
 </div>
 <p>The output to <code>getwd()</code> will be different for everyone,
-but it may look something similar to
-<code>"/Users/yourusernamehere"</code> For example, Jamie’s working
-directory is: <code>"/Users/jamie"</code></p>
-<p>Jamie plans on</p>
-<p>To do so, Jamie wants to organise the files to be used in this
-project in the following folder structure:</p>
+but it may look something like:
+<code>"/Users/yourusernamehere"</code></p>
+<p>For example, Jamie’s working directory is:
+<code>"/Users/jamie"</code></p>
+<p>Jamie wants to set the working directory to a particular folder that
+already exists on their device, called <code>my-r-project</code>.</p>
+<p>To do so, Jamie needs to tell R to change the working directory to
+<code>my-r-project</code> by using the <code>setwd()</code> function and
+typing in the pathname of the folder.</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">setwd</span><span class="op">(</span><span class="st">"/Users/jamie/Desktop/my-r-project"</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="error" tabindex="0"><code>Error in setwd("/Users/jamie/Desktop/my-r-project"): cannot change working directory</code></pre>
+</div>
+<p>When this command is run, no output will be shown in the Console. We
+can use the <code>getwd()</code> command to check whether R has set the
+desired folder as the working directory.</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[1] "/home/runner/work/intro-to-R-for-MRs/intro-to-R-for-MRs/site/built"</code></pre>
+</div>
+<p>Jamie has now confirmed that R is seeing the
+<code>my-r-project</code> as the working directory.</p>
+<div id="good-to-know" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="good-to-know" class="callout-inner">
+<h3 class="callout-title">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know"></a>
+</h3>
+<div class="callout-content">
+<p>You can also set your working directory by navigating through your
+device’s system in the Files pane (bottom right pane), going into the
+folder you want as your working directory, clicking on the cogwheel icon
+and selecting <em>Set as working directory</em>.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section id="organise-the-working-directory"><h2 class="section-heading">Organise the working directory<a class="anchor" aria-label="anchor" href="#organise-the-working-directory"></a>
+</h2>
+<hr class="half-width"><p>Now that Jamie has set up the desired working directory, Jamie wants
+to organise the files to be used in this project in the following folder
+structure within the working directory (<code>my-r-project</code>):</p>
 <ul><li>
 <strong>data/</strong> Jamie will put the raw data files (and other
 data) in this folder</li>
@@ -413,19 +465,80 @@ data manipulation R scripts</li>
 <li>
 <strong>documents/</strong> Jamie will use this folder for the
 research report and any written drafts</li>
-</ul><p>There is no specific folder structure that needs following - the
+</ul><div id="good-to-know-1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="good-to-know-1" class="callout-inner">
+<h3 class="callout-title">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know-1"></a>
+</h3>
+<div class="callout-content">
+<p>There is no specific folder structure that needs following - the
 folder structure is completely up to you, however, having some sort of
 folder structure to organise your files is recommended.</p>
-<div id="challenge1" class="callout challenge">
+</div>
+</div>
+</div>
+<p>There are multiple ways that folders (or directories) may be created
+in RStudio.</p>
+<p>Jamie will use the <code>dir.create()</code> function to create the
+desired folder (directory).</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">dir.create</span><span class="op">(</span><span class="st">"data"</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">WARNING<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="warning" tabindex="0"><code>Warning in dir.create("data"): 'data' already exists</code></pre>
+</div>
+<p>Jamie has now created the first folder within the working directory.
+However, Jamie is not sure whether this was done correctly, as this
+command did not output a result in the Console. To confirm that the
+<code>data</code> folder was created, Jamie used the
+<code>list.files()</code> function, which will display all items in the
+working directory.</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">list.files</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code> [1] "another-case-study.md"       "best-practices.md"          
+ [3] "CODE_OF_CONDUCT.md"          "config.yaml"                
+ [5] "data"                        "data-cleaning.md"           
+ [7] "fig"                         "files"                      
+ [9] "getting-started-with-R.md"   "import-data"                
+[11] "importing data in R"         "index.md"                   
+[13] "inspecting-data.md"          "instructor-notes.md"        
+[15] "learner-profiles.md"         "LICENSE.md"                 
+[17] "links.md"                    "md5sum.txt"                 
+[19] "navigating-the-space.md"     "R-3-panes.png"              
+[21] "reading-data-in-R.md"        "reference.md"               
+[23] "renv.lock"                   "setup.md"                   
+[25] "survey-data-analysis.md"     "visualising-data.md"        
+[27] "Why R for Music Research?"   "why-R-for-music-research.md"</code></pre>
+</div>
+<div id="exercise-can-you-help-jamie-create-the-desired-directory-structure" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<div id="exercise-can-you-help-jamie-create-the-desired-directory-structure" class="callout-inner">
+<h3 class="callout-title">Exercise: Can you help Jamie create the
+desired directory structure?<a class="anchor" aria-label="anchor" href="#exercise-can-you-help-jamie-create-the-desired-directory-structure"></a>
 </h3>
 <div class="callout-content">
-<p>ex 1</p>
-</div>
+<ol style="list-style-type: decimal"><li>Create the following folders in the working directory:
+<code>figures</code>, <code>scripts</code>, <code>munge</code>, and
+<code>documents</code>
+</li>
+<li>Check that all folders are now in your working directory</li>
+</ol></div>
 </div>
 </div>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
@@ -435,11 +548,59 @@ folder structure to organise your files is recommended.</p>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>bla bla</p>
+<ol style="list-style-type: decimal"><li>Create the folders using <code>dir.create()</code>
+</li>
+</ol><div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"figures"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"scripts)</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="st">dir.create("</span>munge<span class="st">")</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="st">dir.create("</span>documents<span class="st">")</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="error" tabindex="0"><code>Error: &lt;text&gt;:3:13: unexpected symbol
+2: dir.create("scripts)
+3: dir.create("munge
+               ^</code></pre>
+</div>
+<ol start="2" style="list-style-type: decimal"><li>Check all items in your working directory</li>
+</ol><div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">list.files</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code> [1] "another-case-study.md"       "best-practices.md"          
+ [3] "CODE_OF_CONDUCT.md"          "config.yaml"                
+ [5] "data"                        "data-cleaning.md"           
+ [7] "fig"                         "files"                      
+ [9] "getting-started-with-R.md"   "import-data"                
+[11] "importing data in R"         "index.md"                   
+[13] "inspecting-data.md"          "instructor-notes.md"        
+[15] "learner-profiles.md"         "LICENSE.md"                 
+[17] "links.md"                    "md5sum.txt"                 
+[19] "navigating-the-space.md"     "R-3-panes.png"              
+[21] "reading-data-in-R.md"        "reference.md"               
+[23] "renv.lock"                   "setup.md"                   
+[25] "survey-data-analysis.md"     "visualising-data.md"        
+[27] "Why R for Music Research?"   "why-R-for-music-research.md"</code></pre>
 </div>
 </div>
 </div>
 </div>
+</div>
+<p>Alternatively, new folders can be created through the Files pane
+(bottom right pane in environment) by clicking on the <em>new folder
+icon</em> : !(fig/new-folder.png){alt=“Small icon showing a yellow
+folder with a white plus sign on a green circle”}</p>
+<p>Folders can also be created outside of RStudio through File
+Explorer/Manager on Windows and Linux, and Finder on Mac.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -466,7 +627,6 @@ directory</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/getting-started-with-R.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
