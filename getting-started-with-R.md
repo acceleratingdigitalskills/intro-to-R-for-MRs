@@ -50,6 +50,28 @@ Default Layout:
 
 *Note.* During this lesson we will not be generating any HTML content, therefore, we will not be using the Viewer and Presentation tabs. 
 
+## Running commands in the console vs in an R script
+
+There are two main ways to run commands in RStudio. 
+
+**Option 1**
+You can type your commands directly into the Console pane. After typing in your code, pressing the `Return` button on your keyboard will run the command, and R will show the result of your command below your code in the Console pane. This is a handy way to try out short lines of code. However, when the code typed in the Console pane will not be saved and will be lost once you close your RStudio session. 
+
+**Option 2**
+You can write your code and save it in a file called an R script, which will allow you to access your code in subsequent RStudio sessions, by opening up your R script. This allows you to have a record of all your code, to be used later by yourself or others. R scripts have '.R' as their file extension. Since typing up commands in an R script is similar to typing words in a text editor, pressing the 'Return' key will not run your commands (like what happens in the Console pane), but it will create a new line for you to write more code. To run the code that you type in an R script, you have to tell RStudio to push your code from the R script to the Console. Once pushed to the Console, the code will be executed, and the results of the code will appear in the Console.
+
+To run a line of code in your R script, make sure that your cursor is on the line of the script that you want to run, and then press the `Run` button at the top of the Editor pane. 
+
+:::::::::::::::::: callout
+### Shortcut to run R script code
+
+Instead of pressing the `Run` button at the top of the Editor pane, you can either: 
+
+- Press `Ctrl` + `Return' on Windows or Linux, or `Command` + `Return` on Mac
+- Select the line or lines of code you want to run, and from the Code menu, select *Run selected line(s)*
+
+:::::::::::::::::::
+
 ## Library packages
 
 Default R comes with what are called base functions. However, R users have also created other packages which hold different tools that can be added to R, to help extend R's capability, depending on what you want to use it for. Packages can be downloaded from the [Comprehensive R Archive Network](https://cran.r-project.org) known as CRAN.
@@ -70,7 +92,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 4.8 milliseconds.
+Successfully installed 1 package in 5 milliseconds.
 ```
 
 Step 2 - Load package   
@@ -125,13 +147,17 @@ install.packages('ggplot2')
 ```
 
 ```{.output}
+# Downloading packages -------------------------------------------------------
+- Downloading ggplot2 from CRAN ...             OK [4.1 Mb in 0.47s]
+Successfully downloaded 1 package in 0.83 seconds.
+
 The following package(s) will be installed:
 - ggplot2 [3.4.4]
 These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-MRs/renv/profiles/lesson-requirements/renv/library/R-4.3/x86_64-pc-linux-gnu".
 
 # Installing packages --------------------------------------------------------
-- Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.3 milliseconds.
+- Installing ggplot2 ...                        OK [installed binary and cached in 0.94s]
+Successfully installed 1 package in 1 second.
 ```
 
 Step 2 - Load package
