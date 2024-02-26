@@ -40,7 +40,7 @@ When you first open RStudio, you will be presented with the default layout of 3 
 
 Default Layout: 
 
-- **Console Pane** (left side of screen): This is the interface you would use if you were working in R rather than RStudio. The Console is used to type in and run commands, with the output being immediately displayed in the Console. A `>` symbol and a blinking cursor show you where to input the code. To run commands in the Console, you have to type in the command and press the `Enter` key. Code typed directly in the console will not be saved, but you can view it in the History Pane (top right of screen - History tab is the one next to Environment). The Terminal tab next to the Console presents you with a command-line interface which you can use to access your computer's operating sysem. 
+- **Console Pane** (left side of screen): This is the interface you would use if you were working in R rather than RStudio. The Console is used to type in and run commands, with the output being immediately displayed in the Console. A `>` symbol and a blinking cursor show you where to input the code. To run commands in the Console, you have to type in the command and press the `Return` key. Code typed directly in the console will not be saved, but you can view it in the History Pane (top right of screen - History tab is the one next to Environment). The Terminal tab next to the Console presents you with a command-line interface which you can use to access your computer's operating sysem. 
 - **Environment Pane** (top right of screen): Any data files you read (or "import") into RStudio will show up here, together with any objects you create in the R environment.
 - **Navigation Pane** (bottom right of screen): The Navigation Pane has multiple tabs.
   + **Files**: This tab allows you to view and navigate through the files you have in your current working directory as well as on your computer. New folders and files can be created and existing ones can also be deleted. Other options may be found by clicking on the gear icon.
@@ -117,7 +117,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 4.9 milliseconds.
+Successfully installed 1 package in 5 milliseconds.
 ```
 
 Step 2 - Load package   
@@ -148,7 +148,7 @@ The following objects are masked from 'package:base':
 
 ### Exercise: Install and load packages
 
-Further on, our persona will want to visualise the number of songwriters per century by gender. For this, we need to install and load the `ggplot2` package. Complete the following code to first install the `ggplot2` package and then load the package in your R environment.
+Further on, Jamie will want to visualise the number of songwriters per century by gender. For this, we need to install and load the `ggplot2` package. Complete the following code to first install the `ggplot2` package and then load the package in your R environment.
 
 Step 1 - Install package
 
@@ -178,7 +178,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.7 milliseconds.
+Successfully installed 1 package in 4.8 milliseconds.
 ```
 
 Step 2 - Load package
@@ -204,11 +204,11 @@ Let's have a look at our loaded packages. To view all packages loaded in our R e
 
 ## Getting help in R
 
-R provides access to in-built documentation on any R function. To access this information, you can use the `help()` function, where you input the name of the function within the brackets of the aforementioned function. For example, if you want to look up the documentation on the `mean` function, which calculates the average of a calculation, you enter `help(mean)` in the terminal and press `Enter`.
+R provides access to in-built documentation on any R function. To access this information, you can use the `help()` function, where you input the name of the function within the brackets of the aforementioned function. For example, if you want to look up the documentation on the `mean` function, which calculates the average of a calculation, you enter `help(mean)` in the terminal and press `Return`.
 
 
 ```r
-help(mean)
+help("mean")
 ```
 
 The R documentation, which includes a brief description of the function, the arguments that can be inputted in the `mean` function, as well as some examples of how the function is used, will show up in the Help pane on the right-hand side of the RStudio environment. As a shortcut to the `help()` function, you can use the `?` help operator to look up the same documentation in this way:
@@ -218,19 +218,46 @@ The R documentation, which includes a brief description of the function, the arg
 ?mean
 ```
 
-The above works well if you know the name of the function you want to look up. However, sometimes, one may be unsure of the exact name of a function. In this case, the `help.search()` function comes in handy to search for functions if you can remember a keyword. This function will search through all the R documentation for functions and packages which contain the keyword inputted, and will display the results in the Help pane as links to all functions and packages contatining the keyword.
+::::::::::::::::: challenge
+### Exercise: Getting help
+
+Jamie wants to look up the `mean` command, but instead of using `help()`, Jamie used `help.search()`. However, this command outputted different search results. Can you help Jamie understand the difference in results? 
+
+- Run `help("mean")` in the console, and look at the results in the Help pane
+- Do the same with the `help.search("mean")` command
+- What is the difference? 
+
+::::::::::::::: solution
+
+Running the two commands consecutively:
+
+
+```r
+help("mean")
+```
 
 
 ```r
 help.search("mean")
 ```
 
-You can also use its equivalent shortcut `??`.
+The `help("mean")` command gave Jamie the relevant help page for the `mean` function. On the other hand, the `help.search("mean")` function gave Jamie a list of links to help pages, vignettes, and code demonstrations where the keyword `mean` was present.
+
+:::::::::::::::
+:::::::::::::::::::::::
+
+The `help("mean")` command works well if you know the exact name of the function you want to look up. However, sometimes, one may be unsure of the exact name of a function. This is where the `help.search()` function comes in handy. This function will search through all R documentation, as well as installed packages and online resources for functions and packages which contain the keyword inputted, and will display the results in the Help pane as links to all functions and packages containing the keyword.
+
+:::::::::::: callout
+### A shortcut 
+
+Instead of `help.search()`, you can also use its equivalent shortcut `??`.
 
 
 ```r
 ??mean
 ```
+::::::::::::::::
 
 ## Getting help outside of R 
 
@@ -251,7 +278,7 @@ Testing out instructor notes
 ::::::::::::: keypoints
 
 - Write your code in an R script to be able to save it
-- Run code in an R script using `cmd` + `Enter` on Mac, `ctrl` + `Enter` on Windows/Linux, or by pressing the Run button
+- Run code in an R script using `Command` + `Return` on Mac, `Ctrl` + `Return` on Windows/Linux, or by pressing the Run button
 - Use `install.packages()` to download and install a library package
 - Use `library()` to load the downloaded package in your environment
 - Use `help()`, `help.search()` and the `?` and `??` help operators to look up documentation on commands and packages
