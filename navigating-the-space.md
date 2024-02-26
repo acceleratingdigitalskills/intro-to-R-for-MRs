@@ -37,13 +37,8 @@ Let's first check what our current working directory is.
 
 To do so, we will use the `getwd()` function (which stands for *get working directory*). 
 
-
-```r
-getwd()
 ```
-
-```{.output}
-[1] "/home/runner/work/intro-to-R-for-MRs/intro-to-R-for-MRs/site/built"
+getwd()
 ```
 
 :::::::::::: callout
@@ -61,23 +56,13 @@ Jamie wants to set the working directory to a particular folder that already exi
 
 To do so, Jamie needs to tell R to change the working directory to `my-r-project` by using the `setwd()` function and typing in the pathname of the folder. 
 
-
-```r
-setwd("/Users/jamie/Desktop/my-r-project")
 ```
-
-```{.error}
-Error in setwd("/Users/jamie/Desktop/my-r-project"): cannot change working directory
+setwd("/Users/jamie/Desktop/my-r-project")
 ```
 When this command is run, no output will be shown in the Console. We can use the `getwd()` command to check whether R has set the desired folder as the working directory.
 
-
-```r
-getwd()
 ```
-
-```{.output}
-[1] "/home/runner/work/intro-to-R-for-MRs/intro-to-R-for-MRs/site/built"
+getwd()
 ```
 
 Jamie has now confirmed that R is seeing the `my-r-project` as the working directory.    
@@ -110,37 +95,14 @@ There are multiple ways that folders (or directories) may be created in RStudio.
      
 Jamie will use the `dir.create()` function to create the desired folder (directory).
 
-
-```r
-dir.create("data")
 ```
-
-```{.warning}
-Warning in dir.create("data"): 'data' already exists
+dir.create("data")
 ```
 
 Jamie has now created the first folder within the working directory. However, Jamie is not sure whether this was done correctly, as this command did not output a result in the Console. To confirm that the `data` folder was created, Jamie used the `list.files()` function, which will display all items in the working directory.
 
-
-```r
-list.files()
 ```
-
-```{.output}
- [1] "another-case-study.md"       "best-practices.md"          
- [3] "CODE_OF_CONDUCT.md"          "config.yaml"                
- [5] "data"                        "data-cleaning.md"           
- [7] "fig"                         "files"                      
- [9] "getting-started-with-R.md"   "import-data"                
-[11] "importing data in R"         "index.md"                   
-[13] "inspecting-data.md"          "instructor-notes.md"        
-[15] "learner-profiles.md"         "LICENSE.md"                 
-[17] "links.md"                    "md5sum.txt"                 
-[19] "navigating-the-space.md"     "R-3-panes.png"              
-[21] "reading-data-in-R.md"        "reference.md"               
-[23] "renv.lock"                   "setup.md"                   
-[25] "survey-data-analysis.md"     "visualising-data.md"        
-[27] "Why R for Music Research?"   "why-R-for-music-research.md"
+list.files()
 ```
 
 :::::::::::::::::: challenge
@@ -153,49 +115,25 @@ list.files()
 
 1. Create the folders using `dir.create()`
 
-
-```r
+```
 dir.create("figures")
 dir.create("scripts)
 dir.create("munge")
 dir.create("documents")
 ```
 
-```{.error}
-Error: <text>:3:13: unexpected symbol
-2: dir.create("scripts)
-3: dir.create("munge
-               ^
-```
-
 2. Check all items in your working directory
 
-
-```r
-list.files()
 ```
-
-```{.output}
- [1] "another-case-study.md"       "best-practices.md"          
- [3] "CODE_OF_CONDUCT.md"          "config.yaml"                
- [5] "data"                        "data-cleaning.md"           
- [7] "fig"                         "files"                      
- [9] "getting-started-with-R.md"   "import-data"                
-[11] "importing data in R"         "index.md"                   
-[13] "inspecting-data.md"          "instructor-notes.md"        
-[15] "learner-profiles.md"         "LICENSE.md"                 
-[17] "links.md"                    "md5sum.txt"                 
-[19] "navigating-the-space.md"     "R-3-panes.png"              
-[21] "reading-data-in-R.md"        "reference.md"               
-[23] "renv.lock"                   "setup.md"                   
-[25] "survey-data-analysis.md"     "visualising-data.md"        
-[27] "Why R for Music Research?"   "why-R-for-music-research.md"
+list.files()
 ```
 
 ::::::::::::
 :::::::::::::::::::::
 
-Alternatively, new folders can be created through the Files pane (bottom right pane in environment) by clicking on the *new folder icon* : !(fig/new-folder.png){alt="Small icon showing a yellow folder with a white plus sign on a green circle"}
+Alternatively, new folders can be created through the Files pane (bottom right pane in environment) by clicking on the *new folder icon*.
+
+![New folder icon](fig/new-folder.png){alt="Small icon showing a yellow folder with a white plus sign on a green circle"}
 
 Folders can also be created outside of RStudio through File Explorer/Manager on Windows and Linux, and Finder on Mac.
 
