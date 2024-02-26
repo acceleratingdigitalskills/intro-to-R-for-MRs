@@ -156,7 +156,16 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="getting-started-with-R.html">2. Getting started with R and RStudio</a>
+        <a href="meet-alex.html">2. Meet Alex</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="getting-started-with-R.html">3. Getting started with R and RStudio</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -168,7 +177,7 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        3. Navigating the workspace
+        4. Navigating the workspace
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -183,19 +192,10 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlush5">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading5">
-        <a href="reading-data-in-R.html">4. Reading data in R</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="inspecting-data.html">5. Inspecting your data in R</a>
+        <a href="reading-data-in-R.html">5. Reading data in R</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -204,7 +204,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="data-cleaning.html">6. Cleaning your data</a>
+        <a href="inspecting-data.html">6. Inspecting your data in R</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -213,7 +213,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="survey-data-analysis.html">7. Analysing survey data</a>
+        <a href="data-cleaning.html">7. Cleaning your data</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -222,7 +222,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="visualising-data.html">8. Visualising survey data with ggplot2</a>
+        <a href="survey-data-analysis.html">8. Analysing survey data</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -231,7 +231,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="another-case-study.html">9. A second case study for music research</a>
+        <a href="visualising-data.html">9. Visualising survey data with ggplot2</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -240,7 +240,16 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="best-practices.html">10. Some best practices when writing code in R</a>
+        <a href="another-case-study.html">10. A second case study for music research</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush12">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading12">
+        <a href="best-practices.html">11. Some best practices when writing code in R</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -345,10 +354,10 @@
 </div>
 <section id="the-working-directory"><h2 class="section-heading">The working directory<a class="anchor" aria-label="anchor" href="#the-working-directory"></a>
 </h2>
-<hr class="half-width"><p>Before starting working on the project, Jamie wants to make sure that
+<hr class="half-width"><p>Before starting working on the project, Alex wants to make sure that
 work is done in an organised way by using a consistent folder structure.
 This will make it easy to find things in the future.</p>
-<p>First, Jamie needs to set up a working directory.</p>
+<p>First, Alex needs to set up a working directory.</p>
 <div class="section level4">
 <h4 id="what-is-a-working-directory">What is a working directory?<a class="anchor" aria-label="anchor" href="#what-is-a-working-directory"></a></h4>
 <p>The word <em>directory</em> may be viewed as another word for
@@ -388,18 +397,18 @@ desired line (or select multiple lines) that you want to run, and press
 <p>The output to <code>getwd()</code> will be different for everyone,
 but it may look something like:
 <code>"/Users/yourusernamehere"</code></p>
-<p>For example, Jamie’s working directory is:
-<code>"/Users/jamie"</code></p>
-<p>Jamie wants to set the working directory to a particular folder that
+<p>For example, Alex’s working directory is:
+<code>"/Users/alex"</code></p>
+<p>Alex wants to set the working directory to a particular folder that
 already exists on their device, called <code>my-r-project</code>.</p>
-<p>To do so, Jamie needs to tell R to change the working directory to
+<p>To do so, Alex needs to tell R to change the working directory to
 <code>my-r-project</code> by using the <code>setwd()</code> function and
 typing in the pathname of the folder.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">setwd</span><span class="op">(</span><span class="st">"/Users/jamie/Desktop/my-r-project"</span><span class="op">)</span></span></code></pre>
+<code class="sourceCode R"><span><span class="fu">setwd</span><span class="op">(</span><span class="st">"/Users/alex/Desktop/my-r-project"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>When this command is run, no output will be shown in the Console. We
 can use the <code>getwd()</code> command to check whether R has set the
@@ -410,8 +419,8 @@ desired folder as the working directory.</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<p>Jamie has now confirmed that R is seeing the
-<code>my-r-project</code> as the working directory.</p>
+<p>Alex has now confirmed that R is seeing the <code>my-r-project</code>
+as the working directory.</p>
 <div id="good-to-know" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -430,23 +439,23 @@ and selecting <em>Set as working directory</em>.</p>
 </div>
 </section><section id="organise-the-working-directory"><h2 class="section-heading">Organise the working directory<a class="anchor" aria-label="anchor" href="#organise-the-working-directory"></a>
 </h2>
-<hr class="half-width"><p>Now that Jamie has set up the desired working directory, Jamie wants
-to organise the files to be used in this project in the following folder
+<hr class="half-width"><p>Now that Alex has set up the desired working directory, Alex wants to
+organise the files to be used in this project in the following folder
 structure within the working directory (<code>my-r-project</code>):</p>
 <ul><li>
-<strong>data/</strong> Jamie will put the raw data files (and other
+<strong>data/</strong> Alex will put the raw data files (and other
 data) in this folder</li>
 <li>
 <strong>figures/</strong> Any plots and graphics created will be
 saved in this folder</li>
 <li>
-<strong>scripts/</strong> All R scripts written by Jamie will be
+<strong>scripts/</strong> All R scripts written by Alex will be
 saved here</li>
 <li>
 <strong>munge/</strong> This folder will hold all data cleaning and
 data manipulation R scripts</li>
 <li>
-<strong>documents/</strong> Jamie will use this folder for the
+<strong>documents/</strong> Alex will use this folder for the
 research report and any written drafts</li>
 </ul><div id="good-to-know-1" class="callout callout">
 <div class="callout-square">
@@ -464,7 +473,7 @@ folder structure to organise your files is recommended.</p>
 </div>
 <p>There are multiple ways that folders (or directories) may be created
 in RStudio.</p>
-<p>Jamie will use the <code>dir.create()</code> function to create the
+<p>Alex will use the <code>dir.create()</code> function to create the
 desired folder (directory).</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -472,10 +481,10 @@ desired folder (directory).</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">dir.create</span><span class="op">(</span><span class="st">"data"</span><span class="op">)</span></span></code></pre>
 </div>
-<p>Jamie has now created the first folder within the working directory.
-However, Jamie is not sure whether this was done correctly, as this
+<p>Alex has now created the first folder within the working directory.
+However, Alex is not sure whether this was done correctly, as this
 command did not output a result in the Console. To confirm that the
-<code>data</code> folder was created, Jamie used the
+<code>data</code> folder was created, Alex used the
 <code>list.files()</code> function, which will display all items in the
 working directory.</p>
 <div class="codewrapper sourceCode" id="cb5">
@@ -484,13 +493,13 @@ working directory.</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">list.files</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<div id="exercise-can-you-help-jamie-create-the-desired-directory-structure" class="callout challenge">
+<div id="exercise-can-you-help-alex-create-the-desired-directory-structure" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-can-you-help-jamie-create-the-desired-directory-structure" class="callout-inner">
-<h3 class="callout-title">Exercise: Can you help Jamie create the
-desired directory structure?<a class="anchor" aria-label="anchor" href="#exercise-can-you-help-jamie-create-the-desired-directory-structure"></a>
+<div id="exercise-can-you-help-alex-create-the-desired-directory-structure" class="callout-inner">
+<h3 class="callout-title">Exercise: Can you help Alex create the desired
+directory structure?<a class="anchor" aria-label="anchor" href="#exercise-can-you-help-alex-create-the-desired-directory-structure"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Create the following folders in the working directory:
