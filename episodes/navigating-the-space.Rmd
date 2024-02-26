@@ -56,12 +56,14 @@ Jamie wants to set the working directory to a particular folder that already exi
 
 To do so, Jamie needs to tell R to change the working directory to `my-r-project` by using the `setwd()` function and typing in the pathname of the folder. 
 
-```
+``` R
 setwd("/Users/jamie/Desktop/my-r-project")
 ```
+     
 When this command is run, no output will be shown in the Console. We can use the `getwd()` command to check whether R has set the desired folder as the working directory.
 
-```
+     
+``` R
 getwd()
 ```
 
@@ -71,9 +73,9 @@ Jamie has now confirmed that R is seeing the `my-r-project` as the working direc
 ### Good to know
 
 You can also set your working directory by navigating through your device's system in the Files pane (bottom right pane), going into the folder you want as your working directory, clicking on the cogwheel icon and selecting *Set as working directory*.
-
 ::::::::::::::::::
 
+        
 ## Organise the working directory
 
 Now that Jamie has set up the desired working directory, Jamie wants to organise the files to be used in this project in the following folder structure within the working directory (`my-r-project`):
@@ -84,6 +86,7 @@ Now that Jamie has set up the desired working directory, Jamie wants to organise
 - **munge/** This folder will hold all data cleaning and data manipulation R scripts
 - **documents/** Jamie will use this folder for the research report and any written drafts
 
+       
 ::::::::::::::::: callout
 ### Good to know
 
@@ -91,19 +94,21 @@ There is no specific folder structure that needs following - the folder structur
 
 :::::::::::::::::::::
 
+     
 There are multiple ways that folders (or directories) may be created in RStudio. 
      
 Jamie will use the `dir.create()` function to create the desired folder (directory).
 
-```
+``` R
 dir.create("data")
 ```
 
 Jamie has now created the first folder within the working directory. However, Jamie is not sure whether this was done correctly, as this command did not output a result in the Console. To confirm that the `data` folder was created, Jamie used the `list.files()` function, which will display all items in the working directory.
 
-```
+``` R
 list.files()
 ```
+
 
 :::::::::::::::::: challenge
 ### Exercise: Can you help Jamie create the desired directory structure?
@@ -115,7 +120,7 @@ list.files()
 
 1. Create the folders using `dir.create()`
 
-```
+``` R
 dir.create("figures")
 dir.create("scripts)
 dir.create("munge")
@@ -124,12 +129,13 @@ dir.create("documents")
 
 2. Check all items in your working directory
 
-```
+``` R
 list.files()
 ```
 
 ::::::::::::
 :::::::::::::::::::::
+         
 
 Alternatively, new folders can be created through the Files pane (bottom right pane in environment) by clicking on the *new folder icon*.
 
