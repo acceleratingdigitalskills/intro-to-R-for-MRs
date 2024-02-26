@@ -117,7 +117,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 5 milliseconds.
+Successfully installed 1 package in 4.9 milliseconds.
 ```
 
 Step 2 - Load package   
@@ -178,7 +178,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.8 milliseconds.
+Successfully installed 1 package in 4.9 milliseconds.
 ```
 
 Step 2 - Load package
@@ -218,7 +218,7 @@ The R documentation, which includes a brief description of the function, the arg
 ?mean
 ```
 
-::::::::::::::::: challenge
+:::::::::::::::::::::: challenge
 ### Exercise: Getting help
 
 Jamie wants to look up the `mean` command, but instead of using `help()`, Jamie used `help.search()`. However, this command outputted different search results. Can you help Jamie understand the difference in results? 
@@ -243,8 +243,8 @@ help.search("mean")
 
 The `help("mean")` command gave Jamie the relevant help page for the `mean` function. On the other hand, the `help.search("mean")` function gave Jamie a list of links to help pages, vignettes, and code demonstrations where the keyword `mean` was present.
 
-:::::::::::::::
-:::::::::::::::::::::::
+::::::::::::::::
+::::::::::::::::::::::::::::
 
 The `help("mean")` command works well if you know the exact name of the function you want to look up. However, sometimes, one may be unsure of the exact name of a function. This is where the `help.search()` function comes in handy. This function will search through all R documentation, as well as installed packages and online resources for functions and packages which contain the keyword inputted, and will display the results in the Help pane as links to all functions and packages containing the keyword.
 
