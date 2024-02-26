@@ -15,15 +15,57 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Set a working directory
+- Set up a working directory
 - Confirm the current working directory
 - Create a directory structure
 - Navigate through your directory
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## The working directory
 
-Testing out exercise
+Before starting working on the project, Jamie wants to make sure that work is done in an organised way by using a consistent folder structure. This will make it easy to find things in the future.
+
+First, Jamie needs to set up a working directory.
+
+### What is a working directory?
+
+The word *directory* may be viewed as another word for *folder*. Since one might have a lot of files and folders on their device, we need to let R know which directory (folder) we will be working in, so that R knows where to look for files to use, open, and also save. We can set up our working directory through RStudio.
+
+Let's first check what our current working directory is. 
+
+To do so, we will use the `getwd()` function (which stands for *get working directory*). 
+
+
+```r
+getwd()
+```
+
+```{.output}
+[1] "/home/runner/work/intro-to-R-for-MRs/intro-to-R-for-MRs/site/built"
+```
+
+:::::::::::: callout
+### Reminder: Use of R script vs Console
+
+You can type the commands directly in the Console, and press `Return` to execute the command. Remember that commands typed directly in the Console will not be saved. Since it might be useful to have a saved copy of the code used throughout this R lesson, it is recommended that you use an R script instead. Remember that to execute line(s) of code in an R script, you have to put your cursor on the desired line (or select multiple lines) that you want to run, and press `Command` + `Return` on Mac or `Ctrl` + `Return` on Windows and Linux.
+
+::::::::::::::::
+
+The output to `getwd()` will be different for everyone, but it may look something similar to `"/Users/yourusernamehere"`
+For example, Jamie's working directory is: `"/Users/jamie"`
+
+Jamie plans on 
+
+To do so, Jamie wants to organise the files to be used in this project in the following folder structure:
+
+- **data/** Jamie will put the raw data files (and other data) in this folder
+- **figures/** Any plots and graphics created will be saved in this folder
+- **scripts/** All R scripts written by Jamie will be saved here
+- **munge/** This folder will hold all data cleaning and data manipulation R scripts
+- **documents/** Jamie will use this folder for the research report and any written drafts
+
+There is no specific folder structure that needs following - the folder structure is completely up to you, however, having some sort of folder structure to organise your files is recommended. 
 
 :::::::::::::::::: challenge
 
