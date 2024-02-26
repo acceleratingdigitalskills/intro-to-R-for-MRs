@@ -24,9 +24,9 @@ exercises: 0
 
 ## The working directory
 
-Before starting working on the project, Jamie wants to make sure that work is done in an organised way by using a consistent folder structure. This will make it easy to find things in the future.
+Before starting working on the project, Alex wants to make sure that work is done in an organised way by using a consistent folder structure. This will make it easy to find things in the future.
 
-First, Jamie needs to set up a working directory.
+First, Alex needs to set up a working directory.
 
 
 #### What is a working directory?
@@ -50,14 +50,14 @@ You can type the commands directly in the Console, and press `Return` to execute
 
 The output to `getwd()` will be different for everyone, but it may look something like: `"/Users/yourusernamehere"`
 
-For example, Jamie's working directory is: `"/Users/jamie"`
+For example, Alex's working directory is: `"/Users/alex"`
 
-Jamie wants to set the working directory to a particular folder that already exists on their device, called `my-r-project`.
+Alex wants to set the working directory to a particular folder that already exists on their device, called `my-r-project`.
 
-To do so, Jamie needs to tell R to change the working directory to `my-r-project` by using the `setwd()` function and typing in the pathname of the folder. 
+To do so, Alex needs to tell R to change the working directory to `my-r-project` by using the `setwd()` function and typing in the pathname of the folder. 
 
 ``` R
-setwd("/Users/jamie/Desktop/my-r-project")
+setwd("/Users/alex/Desktop/my-r-project")
 ```
      
 When this command is run, no output will be shown in the Console. We can use the `getwd()` command to check whether R has set the desired folder as the working directory.
@@ -67,7 +67,7 @@ When this command is run, no output will be shown in the Console. We can use the
 getwd()
 ```
 
-Jamie has now confirmed that R is seeing the `my-r-project` as the working directory.    
+Alex has now confirmed that R is seeing the `my-r-project` as the working directory.    
 
 :::::::::::::::: callout
 ### Good to know
@@ -78,13 +78,13 @@ You can also set your working directory by navigating through your device's syst
         
 ## Organise the working directory
 
-Now that Jamie has set up the desired working directory, Jamie wants to organise the files to be used in this project in the following folder structure within the working directory (`my-r-project`):
+Now that Alex has set up the desired working directory, Alex wants to organise the files to be used in this project in the following folder structure within the working directory (`my-r-project`):
 
-- **data/** Jamie will put the raw data files (and other data) in this folder
+- **data/** Alex will put the raw data files (and other data) in this folder
 - **figures/** Any plots and graphics created will be saved in this folder
-- **scripts/** All R scripts written by Jamie will be saved here
+- **scripts/** All R scripts written by Alex will be saved here
 - **munge/** This folder will hold all data cleaning and data manipulation R scripts
-- **documents/** Jamie will use this folder for the research report and any written drafts
+- **documents/** Alex will use this folder for the research report and any written drafts
 
        
 ::::::::::::::::: callout
@@ -97,13 +97,13 @@ There is no specific folder structure that needs following - the folder structur
      
 There are multiple ways that folders (or directories) may be created in RStudio. 
      
-Jamie will use the `dir.create()` function to create the desired folder (directory).
+Alex will use the `dir.create()` function to create the desired folder (directory).
 
 ``` R
 dir.create("data")
 ```
 
-Jamie has now created the first folder within the working directory. However, Jamie is not sure whether this was done correctly, as this command did not output a result in the Console. To confirm that the `data` folder was created, Jamie used the `list.files()` function, which will display all items in the working directory.
+Alex has now created the first folder within the working directory. However, Alex is not sure whether this was done correctly, as this command did not output a result in the Console. To confirm that the `data` folder was created, Alex used the `list.files()` function, which will display all items in the working directory.
 
 ``` R
 list.files()
@@ -111,7 +111,7 @@ list.files()
 
 
 :::::::::::::::::: challenge
-### Exercise: Can you help Jamie create the desired directory structure?
+### Exercise: Can you help Alex create the desired directory structure?
 
 1. Create the following folders in the working directory: `figures`, `scripts`, `munge`, and `documents`
 2. Check that all folders are now in your working directory
