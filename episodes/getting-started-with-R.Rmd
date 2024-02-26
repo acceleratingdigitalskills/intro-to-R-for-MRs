@@ -50,7 +50,7 @@ Default Layout:
 
 *Note.* During this lesson we will not be generating any HTML content, therefore, we will not be using the Viewer and Presentation tabs. 
 
-## Running commands in the console vs in an R script
+## Running commands in the Console vs in an R script
 
 There are two main ways to run commands in RStudio. 
 
@@ -71,6 +71,15 @@ Instead of pressing the `Run` button at the top of the Editor pane, you can eith
 - Select the line or lines of code you want to run, and from the Code menu, select *Run selected line(s)*
 
 :::::::::::::::::::
+
+:::::::::::::::::: callout
+### Don't forget to save your work
+
+Make sure to save your R script by either pressing the floppy disk (a small light blue and white square) icon on the Editor pane, or by selecting *Save* from the File menu at the top. On your first save, you will be prompted to give your R script a name and select the location where you want to save your file.
+
+The shortcut `Ctrl` + `s` on Windows and Linux, or `Command` + `s` can also be used to save your file. 
+
+::::::::::::::::::::
 
 ## Library packages
 
