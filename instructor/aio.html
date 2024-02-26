@@ -926,7 +926,7 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Set a working directory</li>
+<li>Set up a working directory</li>
 <li>Confirm the current working directory</li>
 <li>Create a directory structure</li>
 <li>Navigate through your directory</li>
@@ -936,7 +936,82 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<p>Testing out exercise</p>
+<section id="the-working-directory"><h2 class="section-heading">The working directory<a class="anchor" aria-label="anchor" href="#the-working-directory"></a>
+</h2>
+<hr class="half-width">
+<p>Before starting working on the project, Jamie wants to make sure that
+work is done in an organised way by using a consistent folder structure.
+This will make it easy to find things in the future.</p>
+<p>First, Jamie needs to set up a working directory.</p>
+<div class="section level3">
+<h3 id="what-is-a-working-directory">What is a working directory?<a class="anchor" aria-label="anchor" href="#what-is-a-working-directory"></a>
+</h3>
+<p>The word <em>directory</em> may be viewed as another word for
+<em>folder</em>. Since one might have a lot of files and folders on
+their device, we need to let R know which directory (folder) we will be
+working in, so that R knows where to look for files to use, open, and
+also save. We can set up our working directory through RStudio.</p>
+<p>Let’s first check what our current working directory is.</p>
+<p>To do so, we will use the <code>getwd()</code> function (which stands
+for <em>get working directory</em>).</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[1] "/home/runner/work/intro-to-R-for-MRs/intro-to-R-for-MRs/site/built"</code></pre>
+</div>
+<div id="reminder-use-of-r-script-vs-console" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="reminder-use-of-r-script-vs-console" class="callout-inner">
+<h3 class="callout-title">Reminder: Use of R script vs Console<a class="anchor" aria-label="anchor" href="#reminder-use-of-r-script-vs-console"></a>
+</h3>
+<div class="callout-content">
+<p>You can type the commands directly in the Console, and press
+<code>Return</code> to execute the command. Remember that commands typed
+directly in the Console will not be saved. Since it might be useful to
+have a saved copy of the code used throughout this R lesson, it is
+recommended that you use an R script instead. Remember that to execute
+line(s) of code in an R script, you have to put your cursor on the
+desired line (or select multiple lines) that you want to run, and press
+<code>Command</code> + <code>Return</code> on Mac or <code>Ctrl</code> +
+<code>Return</code> on Windows and Linux.</p>
+</div>
+</div>
+</div>
+<p>The output to <code>getwd()</code> will be different for everyone,
+but it may look something similar to
+<code>"/Users/yourusernamehere"</code> For example, Jamie’s working
+directory is: <code>"/Users/jamie"</code></p>
+<p>Jamie plans on</p>
+<p>To do so, Jamie wants to organise the files to be used in this
+project in the following folder structure:</p>
+<ul>
+<li>
+<strong>data/</strong> Jamie will put the raw data files (and other
+data) in this folder</li>
+<li>
+<strong>figures/</strong> Any plots and graphics created will be
+saved in this folder</li>
+<li>
+<strong>scripts/</strong> All R scripts written by Jamie will be
+saved here</li>
+<li>
+<strong>munge/</strong> This folder will hold all data cleaning and
+data manipulation R scripts</li>
+<li>
+<strong>documents/</strong> Jamie will use this folder for the
+research report and any written drafts</li>
+</ul>
+<p>There is no specific folder structure that needs following - the
+folder structure is completely up to you, however, having some sort of
+folder structure to organise your files is recommended.</p>
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -984,7 +1059,13 @@ directory</li>
 </ul>
 </div>
 </div>
-</div></section><section id="aio-reading-data-in-R"><p>Content from <a href="reading-data-in-R.html">Reading data in R</a></p>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</div>
+</section></section><section id="aio-reading-data-in-R"><p>Content from <a href="reading-data-in-R.html">Reading data in R</a></p>
 <hr>
 <p>Last updated on 2024-02-26 |
         
