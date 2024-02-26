@@ -22,6 +22,20 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+Testing out exercise
+
+:::::::::::::::::: challenge
+
+ex 1
+
+::::::::: solution
+
+bla bla
+
+::::::::::::
+::::::::::::::::::
+
 ::::::::::::: keypoints
 
 - The term 'directory' in R has the same meaning as the common term 'folder' 
