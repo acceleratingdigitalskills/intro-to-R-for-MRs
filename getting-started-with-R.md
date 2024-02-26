@@ -36,6 +36,8 @@ During this lesson, we will use RStudio to write out R code, navigate different 
 
 When you first open RStudio, you will be presented with the default layout of 3 main panes. The placement of these panes can be customised from the *Tools > Global Options > Pane Layout* menu. 
 
+![The default layout in RStudio](fig/R-3-panes.png)
+
 Default Layout: 
 
 - **Console Pane** (left side of screen): This is the interface you would use if you were working in R rather than RStudio. The Console is used to type in and run commands, with the output being immediately displayed in the Console. A `>` symbol and a blinking cursor show you where to input the code. To run commands in the Console, you have to type in the command and press the `Enter` key. Code typed directly in the console will not be saved, but you can view it in the History Pane (top right of screen - History tab is the one next to Environment). The Terminal tab next to the Console presents you with a command-line interface which you can use to access your computer's operating sysem. 
@@ -101,7 +103,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 5.1 milliseconds.
+Successfully installed 1 package in 4.8 milliseconds.
 ```
 
 Step 2 - Load package   
@@ -162,7 +164,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.8 milliseconds.
+Successfully installed 1 package in 4.7 milliseconds.
 ```
 
 Step 2 - Load package
