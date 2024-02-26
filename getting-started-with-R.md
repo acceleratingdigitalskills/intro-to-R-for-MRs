@@ -117,7 +117,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing dplyr ...                          OK [linked from cache]
-Successfully installed 1 package in 4.9 milliseconds.
+Successfully installed 1 package in 4.8 milliseconds.
 ```
 
 Step 2 - Load package   
@@ -178,7 +178,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.9 milliseconds.
+Successfully installed 1 package in 4.8 milliseconds.
 ```
 
 Step 2 - Load package
@@ -251,7 +251,7 @@ The `help("mean")` command works well if you know the exact name of the function
 :::::::::::: callout
 ### A shortcut 
 
-Instead of `help.search()`, you can also use its equivalent shortcut `??`.
+Instead of `help.search()`, you can also use its equivalent shortcut `??`
 
 
 ```r
