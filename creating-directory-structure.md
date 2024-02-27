@@ -1,5 +1,5 @@
 ---
-title: "Navigating the workspace"
+title: "Creating a directory stucture"
 teaching: 0
 exercises: 0
 ---
@@ -52,7 +52,7 @@ The output to `getwd()` will be different for everyone, but it may look somethin
 
 For example, Alex's working directory is: `"/Users/alex"`
 
-Alex wants to set the working directory to a particular folder that already exists on their device, called `my-r-project`.
+Alex wants to set the working directory to an existing folder called `my-r-project`.
 
 To do so, Alex needs to tell R to change the working directory to `my-r-project` by using the `setwd()` function and typing in the pathname of the folder. 
 

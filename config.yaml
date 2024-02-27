@@ -64,7 +64,7 @@ episodes:
 - why-R-for-music-research.Rmd
 - meet-alex.Rmd
 - getting-started-with-R.Rmd
-- navigating-the-space.Rmd
+- creating-directory-structure.Rmd
 - reading-data-in-R.Rmd
 - inspecting-data.Rmd
 - data-cleaning.Rmd
