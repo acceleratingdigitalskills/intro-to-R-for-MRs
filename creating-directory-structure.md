@@ -1,5 +1,5 @@
 ---
-title: "Creating a directory stucture"
+title: "Creating a directory structure"
 teaching: 0
 exercises: 0
 ---
