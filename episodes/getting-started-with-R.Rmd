@@ -172,7 +172,7 @@ The R documentation, which includes a brief description of the function, the arg
 :::::::::::::::::::::: challenge
 ### Exercise: Getting help
 
-Alex wants to look up the `mean` command, but instead of using `help()`, Alex used `help.search()`. However, this command outputted different search results. Can you help Alex understand the difference in results? 
+Alex wants to look up the `mean` command, but instead of using `help()`, Alex used `help.search()`. However, this command outputted different search results.
 
 - Run `help("mean")` in the console, and look at the results in the Help pane
 - Do the same with the `help.search("mean")` command
