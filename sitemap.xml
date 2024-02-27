@@ -28,6 +28,9 @@
     <loc>https://carpentries.github.io/workbench-template-rmd/best-practices.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/creating-directory-structure.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/data-cleaning.html</loc>
   </url>
   <url>
@@ -71,6 +74,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/best-practices.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/creating-directory-structure.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/data-cleaning.html</loc>
