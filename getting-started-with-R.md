@@ -173,12 +173,12 @@ install.packages('ggplot2')
 
 ```{.output}
 The following package(s) will be installed:
-- ggplot2 [3.4.4]
+- ggplot2 [3.5.0]
 These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-MRs/renv/profiles/lesson-requirements/renv/library/R-4.3/x86_64-pc-linux-gnu".
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.7 milliseconds.
+Successfully installed 1 package in 4.1 milliseconds.
 ```
 
 Step 2 - Load package
@@ -221,7 +221,7 @@ The R documentation, which includes a brief description of the function, the arg
 :::::::::::::::::::::: challenge
 ### Exercise: Getting help
 
-Alex wants to look up the `mean` command, but instead of using `help()`, Alex used `help.search()`. However, this command outputted different search results. Can you help Alex understand the difference in results? 
+Alex wants to look up the `mean` command, but instead of using `help()`, Alex used `help.search()`. However, this command outputted different search results.
 
 - Run `help("mean")` in the console, and look at the results in the Help pane
 - Do the same with the `help.search("mean")` command
