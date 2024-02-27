@@ -4,7 +4,7 @@ teaching: 5
 exercises: 0
 ---
 
-## Say hello to Alex!
+### Say hello to Alex!
 
 Alex is a graduate student studying Music Psychology. Alex is a pianist, and also likes to dabble in music composition. Alex is comfortable using Ableton Live and Logic Pro with MIDI keystations to record and master music.
 
