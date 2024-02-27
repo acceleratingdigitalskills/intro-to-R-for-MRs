@@ -111,7 +111,7 @@ list.files()
 
 
 :::::::::::::::::: challenge
-### Exercise: Can you help Alex create the desired directory structure?
+### Exercise: Directory structure
 
 1. Create the following folders in the working directory: `figures`, `scripts`, `munge`, and `documents`
 2. Check that all folders are now in your working directory
