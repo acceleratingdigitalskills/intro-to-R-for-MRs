@@ -346,8 +346,8 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Import a csv data file in R</li>
-<li>Import an Excel data file in R</li>
+<ul><li>Import an Excel data file in R</li>
+<li>Import a csv data file in R</li>
 <li>Specify how to deal with missing values</li>
 <li>Create an object for your imported data</li>
 <li>Display the imported data in R</li>
@@ -386,7 +386,7 @@ be used and/or saved. The data files downloaded should be put in the
 directory set up in <a href="https://acceleratingdigitalskills.github.io/intro-to-R-for-MRs/creating-directory-structure.html" class="external-link">Episode
 4</a>.</p>
 <ul><li>To check what your working directory is set to, use
-<code>getwd()</code>.</li>
+<code>getwd()</code>.<br></li>
 <li>To set a new working directory, use
 <code>setwd("pathway here")</code>, or go into the desired folder
 through the Files Pane and click on the Cogwheel and select <em>Set as
@@ -411,7 +411,7 @@ following the steps used in <a href="https://acceleratingdigitalskills.github.io
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-the-readxl-package" class="callout-inner">
-<h3 class="callout-title">Exercise: The<code>readxl</code>package<a class="anchor" aria-label="anchor" href="#exercise-the-readxl-package"></a>
+<h3 class="callout-title">Exercise: The readxl package<a class="anchor" aria-label="anchor" href="#exercise-the-readxl-package"></a>
 </h3>
 <div class="callout-content">
 <p>Install and load the <code>readxl</code> package</p>
@@ -469,9 +469,27 @@ package is loaded.</p>
 </div>
 </div>
 </div>
-<p>R can read different types of data files, including: - csv
-(comma-separated values) - tsv (tab-separated values) - Excel files -
-XML files - File types from STATA and SPSS - JSON files</p>
+<p>We will now load our Excel data file into R, and assign our data file
+a name so that we can store it in our RStudio environment - in other
+words, saving our file in R’s memory. To do so, we will use the
+<strong>assign operator</strong> which is <strong>&lt;-</strong>.</p>
+<p>We will call our data file <code>exceldata</code>.</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">exceldata</span> <span class="op">&lt;-</span> <span class="fu">read_excel</span><span class="op">(</span><span class="st">"dummy_data.xslx"</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="error" tabindex="0"><code>Error: `path` does not exist: 'dummy_data.xslx'</code></pre>
+</div>
+<p>Once this command is run, an object with the name
+<code>exceldata</code> showing the number of observations and variables
+should be present in the Environment pane (top right).</p>
+<p>Let’s view the contents of our data file using
+<code>View(exceldata)</code>. The file should open up in a new tab.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
