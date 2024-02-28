@@ -16,8 +16,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Import a csv data file in R
 - Import an Excel data file in R
+- Import a csv data file in R
 - Specify how to deal with missing values
 - Create an object for your imported data
 - Display the imported data in R
@@ -33,16 +33,15 @@ Download the data files [here](https://drive.google.com/drive/folders/18bMh1zofs
 
 :::::::::::: callout
 ## Reminder: Files need to be in the working directory
-    
+
 Remember that R needs to know in which directory to look for files to be used and/or saved. The data files downloaded should be put in the directory set up in [Episode 4](https://acceleratingdigitalskills.github.io/intro-to-R-for-MRs/creating-directory-structure.html). 
 
-+ To check what your working directory is set to, use `getwd()`.
-+ To set a new working directory, use `setwd("pathway here")`, or go into the desired folder through the Files Pane and click on the Cogwheel and select *Set as working directory*.
+- To check what your working directory is set to, use `getwd()`.  
+- To set a new working directory, use `setwd("pathway here")`, or go into the desired folder through the Files Pane and click on the Cogwheel and select *Set as working directory*.  
 
 :::::::::::::::::
 
 ## Importing data files in R (two-ways)
-
 Our dummy data set files come in two formats: a **.csv** file and a **.xlsx** file. To test out how R handles both types of data files, we will first import the Excel file, and then the csv file in R. 
 
 ### Importing an Excel data file
@@ -50,7 +49,7 @@ Our dummy data set files come in two formats: a **.csv** file and a **.xlsx** fi
 An Excel file can be imported in R using the library package `readxl`. We need to install and load the library package by following the steps used in [Episode 3 of this lesson](https://acceleratingdigitalskills.github.io/intro-to-R-for-MRs/getting-started-with-R.html), before we can use it. 
 
 ::::::::::::::: challenge
-## Exercise: The `readxl` package
+## Exercise: The readxl package
 
 Install and load the `readxl` package
 
@@ -85,20 +84,26 @@ library(readxl)
 
 :::::::::::::: callout
 ## TIP
-
 A quick way to check whether a library package was loaded in your environment or not, is to go to the Packages pane (bottom-right) and the Search function, look up the name of your library package. A tick should be displayed next to the library package name, indicating that the package is loaded.
 
 :::::::::::::::::
 
+We will now load our Excel data file into R, and assign our data file a name so that we can store it in our RStudio environment - in other words, saving our file in R's memory. To do so, we will use the **assign operator** which is **<-**. 
+
+We will call our data file `exceldata`.
 
 
-R can read different types of data files, including:
-- csv (comma-separated values) 
-- tsv (tab-separated values)
-- Excel files
-- XML files
-- File types from STATA and SPSS 
-- JSON files 
+```r
+exceldata <- read_excel("dummy_data.xslx")
+```
+
+```{.error}
+Error: `path` does not exist: 'dummy_data.xslx'
+```
+Once this command is run, an object with the name `exceldata` showing the number of observations and variables should be present in the Environment pane (top right). 
+
+Let's view the contents of our data file using `View(exceldata)`. The file should open up in a new tab. 
+
 
 
 :::::::::::: keypoints
