@@ -6,7 +6,7 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- Which data files can be imported in R?
+- How do I import csv and Excel data files in R?
 - How are files in Excel and csv format displayed in R?
 - How does R deal with missing values?
 - How do I give names to the data set imported?
@@ -24,7 +24,67 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::: keypoints
+## Introducing our dummy data set 
+During this and the following episodes, we will be using a dummy data set as an example of survey data. The dummy data sat is inspired by a study about the effect of background music on individuals’ working memory capacity carried out by [Lehmann and Suefert, 2017](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full). Our fake study consisted of  participants carrying out a comprehension task and a working memory task in one of the two conditions: in silence, or with background music. Participants also rated their mood and arousal on 5-point scales, and demographic information such as musicianship and age was collected. The fake study was run online, and data was collected using a Web-based survey tool. We will use R to explore the data set, and analyse the data, to see whether background music had an effect on our fake participants’ performances in the tasks.
+
+But first, we need to import the data into R. 
+
+Download the data files [here](https://drive.google.com/drive/folders/18bMh1zofsAdbwdsm7NwzsELXPBwYoUn9?usp=share_link). 
+
+:::::::::::: callout
+## Reminder: Files need to be in the working directory
+    
+Remember that R needs to know in which directory to look for files to be used and/or saved. The data files downloaded should be put in the directory set up in [Episode 4](https://acceleratingdigitalskills.github.io/intro-to-R-for-MRs/creating-directory-structure.html). 
+
++ To check what your working directory is set to, use `getwd()`.
++ To set a new working directory, use `setwd("pathway here)`.
+
+:::::::::::::::::
+
+## Importing data files in R (two-ways)
+
+Our dummy data set files come in two formats: a **.csv** file and a **.xlsx** file. To test out how R handles both types of data files, we will first import the Excel file, and then the csv file in R. 
+
+### Importing an Excel data file
+
+An Excel file can be imported in R using the library package `readxl`. We need to install and load the library package by following the steps used in [Episode 3 of this lesson](https://acceleratingdigitalskills.github.io/intro-to-R-for-MRs/getting-started-with-R.html), before we can use it. 
+
+::::::::::::::: challenge
+## Exercise: The `readxl` package
+
+Install and load the `readxl` package
+
+::::::::: solution 
+
+Step 1: Install the package
+
+``` {r}
+install.packages("readxl")
+```
+
+Step 2: Load the library package in your R environment
+
+```{r}
+library(readxl)
+```
+
+:::::::::::::
+::::::::::::::::::::::::::
+
+
+
+
+
+R can read different types of data files, including:
+- csv (comma-separated values) 
+- tsv (tab-separated values)
+- Excel files
+- XML files
+- File types from STATA and SPSS 
+- JSON files 
+
+
+:::::::::::: keypoints
 
 - R can read multiple file types
 - Use `read.csv()` to import a csv data file in R
@@ -34,13 +94,3 @@ exercises: 0
 - Use `print` to display the contents of your object in the R console
 
 :::::::::::::::::::::
-
-## Importing survey data in R
-
-Alex is working on a replication study about the effect of background music on individuals’ working memory capacity, based on the study by [Lehmann and Suefert, 2017](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full). Similar to Lehmann and Suefert, Alex ran a study where participants carried out a comprehension task and a working memory task, either in silence, or with background music. The study was run online, and data was collected using a Web-based survey tool. Alex has collected a sufficient number of responses, and now wants to download and analyse the data, to see whether background music had an effect on the participants’ performances in the tasks.
-
-But first, Alex needs to import the data into R. 
-
-Download the data files ['here'](https://drive.google.com/drive/folders/18bMh1zofsAdbwdsm7NwzsELXPBwYoUn9?usp=share_link)
-
-
