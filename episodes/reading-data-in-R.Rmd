@@ -196,6 +196,18 @@ When we view `ourdata`, we can now see that any instances of written text with "
 ::::::::::
 ::::::::::::::::
 
+::::::::::: callout
+## GOOD TO KNOW
+
+The `read_excel()` function has a similar argument called `na`:
+
+``` R
+exceldata <- read_excel("dummay_data.xlsx", na = "N/A")
+```
+
+::::::::::::
+
+
 Now that we have our data file with the `na.strings` argument, we can remove the first `csvdata` created, and move on to inspecting our data in the next episode. 
 
 :::::::::::: keypoints
@@ -203,6 +215,6 @@ Now that we have our data file with the `na.strings` argument, we can remove the
 - Use `read.csv()` to import a csv data file in R
 - Use `read_excel()` from the `readxl` package to import an Excel data file in R
 - Use the assign operator `<-` to give a name to your data set
-- Specify how to deal with missing values using the `na.strings` argument in `read.csv()` when importing a csv file or the `na` argument in `read_excel()` when importing an Excel file
+- Specify how to deal with missing values using the `na.strings` argument in `read.csv()` when importing a csv file
 
 :::::::::::::::::::::
