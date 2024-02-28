@@ -125,14 +125,14 @@ Compare how the data files were represented in Excel and a text editor (images a
 
 Write down your answers in the Etherpad.
 
-::::::::::::::::::::
+:::::::::::::::::::::
 
-::::::::::::::::::::: spoiler
+::::::::::::::::::: spoiler
 ## How R displayed our data
 
 Data in Excel is presented in tabular format (the rows and columns) in cells. When we opened the .csv file outside of R, our data was not presented in a tabular format, but as a text file with data separated by commas (hence **c**omma **s**eperated **v**alues). However, R stored both data file formats as tabular data. 
 
-::::::::::::::::::::::::::
+::::::::::::::::::::::::::::
 
 ### Excel vs csv 
 
@@ -193,8 +193,8 @@ ourdata <- read.csv("dummy_data.csv", na.strings = c(NA, "N/A", "n/a"))
 
 When we view `ourdata`, we can now see that any instances of written text with "N/A" and "n/a" are also being regarded as missing values. 
 
-::::::::::
-::::::::::::::::
+:::::::::::::
+::::::::::::::::::::
 
 ::::::::::: callout
 ## GOOD TO KNOW
@@ -202,9 +202,8 @@ When we view `ourdata`, we can now see that any instances of written text with "
 The `read_excel()` function has a similar argument called `na`:
 
 ``` R
-exceldata <- read_excel("dummay_data.xlsx", na = "N/A")
+exceldata <- read_excel("dummy_data.xlsx", na = "N/A")
 ```
-
 ::::::::::::::::
 
 Now that we have our data file with the `na.strings` argument, we can remove the first `csvdata` created, and move on to inspecting our data in the next episode. 
