@@ -1138,7 +1138,7 @@ working directory.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Create the folders using <code>dir.create()</code>
@@ -1219,7 +1219,7 @@ any links that you are not going to use.
 <li>How are files in Excel and csv format displayed in R?</li>
 <li>How does R deal with missing values?</li>
 <li>How do I give names to the data set imported?</li>
-<li>How do I display the imported data?</li>
+<li>How do I view the imported data?</li>
 </ul>
 </div>
 </div>
@@ -1279,7 +1279,8 @@ directory set up in <a href="https://acceleratingdigitalskills.github.io/intro-t
 <li>To set a new working directory, use
 <code>setwd("pathway here")</code>, or go into the desired folder
 through the Files Pane and click on the Cogwheel and select <em>Set as
-working directory</em>.</li>
+working directory</em>.<br>
+</li>
 </ul>
 </div>
 </div>
@@ -1321,7 +1322,7 @@ following the steps used in <a href="https://acceleratingdigitalskills.github.io
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Step 1: Install the package</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -1339,7 +1340,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing readxl ...                         OK [linked from cache]
-Successfully installed 1 package in 5.1 milliseconds.</code></pre>
+Successfully installed 1 package in 5 milliseconds.</code></pre>
 </div>
 <p>Step 2: Load the library package in your R environment</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -1426,7 +1427,7 @@ or similarities?</p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>How R displayed our data</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <p>Data in Excel is presented in tabular format (the rows and columns)
 in cells. When we opened the .csv file outside of R, our data was not
@@ -1442,6 +1443,124 @@ tabular data.</p>
 <div class="section level3">
 <h3 id="excel-vs-csv">Excel vs csv<a class="anchor" aria-label="anchor" href="#excel-vs-csv"></a>
 </h3>
+<p>Although we could work with both Excel or csv files, in this lesson
+we will continue working with our data in csv format.</p>
+<p>csv files tend to be favoured as a data file format for a couple of
+reasons:</p>
+<ul>
+<li>csv is in plain text format and can be read with any text
+editor</li>
+<li>text editors cannot edit files saved in Excel format</li>
+<li>csv files do not need any specific platform to open, whilst Excel
+files need specific applications</li>
+<li>csv files consume less memory than Excel files</li>
+<li>csv fils are generally faster than an Excel file</li>
+</ul>
+<p>Since we do not need the <code>exceldata</code> anymore, we will
+remove this from our R environment (i.e., we will remove this from R’s
+memory) using <code>rm(exceldata)</code>.</p>
+</div>
+<div class="section level3">
+<h3 id="dealing-with-missing-values">Dealing with missing values<a class="anchor" aria-label="anchor" href="#dealing-with-missing-values"></a>
+</h3>
+<p>More often than not, our data will contain some missing values,
+perhaps because certain participants did not complete the survey, or
+maybe there were some optional questions which participants opted to
+skip.</p>
+<p>One way to deal with missing values is at the data import stage. Most
+funtions in R tend to have several <em>arguments</em> (or settings) that
+you can specify. One of the arguments of the <code>read.csv()</code>
+function that comes in handy in these cases is the
+<code>na.strings</code>.</p>
+<p>The <code>na.strings</code> argument allows you to specify which
+values in your data set should be interpreted as NA values.</p>
+<p>For example, for blank fields to be considered as missing values when
+importing a data file, we could write the following code:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">ourdata</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="st">"dummy_data.csv"</span>, na.strings <span class="op">=</span> <span class="cn">NA</span><span class="op">)</span></span></code></pre>
+</div>
+<p>We can also specify any words (i.e., data of character type) that
+should be regarded as missing values, such as the words “NA” written
+down in a field:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">ourdata</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="st">"dummy_data.csv"</span>, na.strings <span class="op">=</span> <span class="st">"NA"</span><span class="op">)</span></span></code></pre>
+</div>
+<p><strong>Note.</strong> Here we put NA in “” since in this case NA is
+written text.</p>
+<div id="exercise-nas-in-our-data" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-nas-in-our-data" class="callout-inner">
+<h3 class="callout-title">Exercise: NAs in our data<a class="anchor" aria-label="anchor" href="#exercise-nas-in-our-data"></a>
+</h3>
+<div class="callout-content">
+<p>Have a look at our <code>csvdata</code> and try to spot missing
+values in the data. Make a note of all representations of the missing
+data (e.g., blank fields, text such as “n/a” being used, etc.).</p>
+<p>Let’s import our csv file once again in R, but this time adding the
+<code>na.strings</code> argument in the <code>read.csv()</code>
+function, specifying all values in the data that should be regarded as
+missing values.</p>
+<p><strong>HINT:</strong> To combine multiple items in the
+<code>na.strings</code> argument, use the following syntax:
+<code>na.strings = c("A", "B, "C")</code></p>
+<p>View this new object. What can you observe?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>In our data we have blank fields but also the use of the text “N/A”
+and “n/a” which should be regarded as missing values.</p>
+<p>To import our data file excluding all of the above, we write the
+following code:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">ourdata</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="st">"dummy_data.csv"</span>, na.strings <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="cn">NA</span>, <span class="st">"N/A"</span>, <span class="st">"n/a"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
+</div>
+<p>When we view <code>ourdata</code>, we can now see that any instances
+of written text with “N/A” and “n/a” are also being regarded as missing
+values.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="callout3" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="good-to-know">GOOD TO KNOW<a class="anchor" aria-label="anchor" href="#good-to-know"></a>
+</h3>
+<div class="callout-content">
+<p>The <code>read_excel()</code> function has a similar argument called
+<code>na</code>:</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">exceldata</span> <span class="op">&lt;-</span> <span class="fu">read_excel</span><span class="op">(</span><span class="st">"dummy_data.xlsx"</span>, na <span class="op">=</span> <span class="st">"N/A"</span><span class="op">)</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<p>Now that we have our data file with the <code>na.strings</code>
+argument, we can remove the first <code>csvdata</code> created, and move
+on to inspecting our data in the next episode.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1451,7 +1570,6 @@ tabular data.</p>
 </h3>
 <div class="callout-content">
 <ul>
-<li>R can read multiple file types</li>
 <li>Use <code>read.csv()</code> to import a csv data file in R</li>
 <li>Use <code>read_excel()</code> from the <code>readxl</code> package
 to import an Excel data file in R</li>
@@ -1459,10 +1577,7 @@ to import an Excel data file in R</li>
 data set</li>
 <li>Specify how to deal with missing values using the
 <code>na.strings</code> argument in <code>read.csv()</code> when
-importing a csv file or the <code>na</code> argument in
-<code>read_excel()</code> when importing an Excel file</li>
-<li>Use <code>print</code> to display the contents of your object in the
-R console</li>
+importing a csv file</li>
 </ul>
 </div>
 </div>
