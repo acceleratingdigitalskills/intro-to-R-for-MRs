@@ -64,10 +64,7 @@ FIXME: place any data you want learners to use in `episodes/data` and then use
        a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
        link to it, replacing the example.com link.
 -->
-1.	Make a new folder in your Desktop called r-intro-music-research.
-2.	Download the r-intro-data.zip and move the file to this folder.
-3.	If it’s not unzipped yet, double-click on it to unzip it. You should end up with a new folder called data.
 
-  Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+  Download the [data-files folder](https://drive.google.com/drive/folders/18bMh1zofsAdbwdsm7NwzsELXPBwYoUn9?usp=share_link) and put it on your Desktop.
 
 
