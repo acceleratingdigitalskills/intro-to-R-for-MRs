@@ -739,7 +739,7 @@ then load the package in your R environment.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Step 1 - Install package</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -838,7 +838,7 @@ results in the Help pane</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Running the two commands consecutively:</p>
 <div class="codewrapper sourceCode" id="cb16">
@@ -913,7 +913,7 @@ Carpentries</a> lessons on R</li>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Testing out instructor notes</p>
 </div>
@@ -1157,7 +1157,7 @@ working directory.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Create the folders using <code>dir.create()</code>
@@ -1264,7 +1264,7 @@ any links that you are not going to use.
 </h2>
 <hr class="half-width">
 <p>During this and the following episodes, we will be using a dummy data
-set as an example of survey data. The dummy data sat is inspired by a
+set as an example of survey data. The dummy data set is inspired by a
 study about the effect of background music on individuals’ working
 memory capacity carried out by <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full" class="external-link">Lehmann
 and Suefert, 2017</a>. Our fake study consisted of participants carrying
@@ -1399,11 +1399,6 @@ words, saving our file in R’s memory. To do so, we will use the
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">exceldata</span> <span class="op">&lt;-</span> <span class="fu">read_excel</span><span class="op">(</span><span class="st">"dummy_data.xslx"</span><span class="op">)</span></span></code></pre>
 </div>
-<div class="codewrapper">
-<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="error" tabindex="0"><code>Error: `path` does not exist: 'dummy_data.xslx'</code></pre>
-</div>
 <p>Once this command is run, an object with the name
 <code>exceldata</code> showing the number of observations and variables
 should be present in the Environment pane (top right).</p>
@@ -1415,42 +1410,32 @@ should be present in the Environment pane (top right).</p>
 <p>We will use the <code>read.csv()</code> function to import our csv
 file. Similarly, we will give our csv data file a name and ‘save’ it in
 our R environment. We will call this data file <code>csvdata</code>.</p>
-<div class="codewrapper sourceCode" id="cb6">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">csvdata</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="st">"dummy_data.csv"</span><span class="op">)</span></span></code></pre>
 </div>
-<div class="codewrapper">
-<h3 class="code-label">WARNING<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="warning" tabindex="0"><code>Warning in file(file, "rt"): cannot open file 'dummy_data.csv': No such file or
-directory</code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="error" tabindex="0"><code>Error in file(file, "rt"): cannot open the connection</code></pre>
-</div>
-<p>This new item (or object/variable) can now be seen in our Environment
+<p>This new object or variable can now be seen in our Environment
 pane.</p>
-<div id="discussion-excel-vs-csv" class="callout discussion">
+<div id="exercise-representation-of-our-two-data-files" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="discussion-excel-vs-csv" class="callout-inner">
-<h3 class="callout-title">Discussion: Excel vs csv<a class="anchor" aria-label="anchor" href="#discussion-excel-vs-csv"></a>
+<div id="exercise-representation-of-our-two-data-files" class="callout-inner">
+<h3 class="callout-title">Exercise: Representation of our two data
+files<a class="anchor" aria-label="anchor" href="#exercise-representation-of-our-two-data-files"></a>
 </h3>
 <div class="callout-content">
 <p>Let’s look at the contents of our <code>exceldata</code> in R using
-<code>View(exceldata)</code>. The contens of <code>exceldata</code>
+<code>View(exceldata)</code>. The contents of <code>exceldata</code>
 should open up in a new tab. Use the same function to view the contents
 of <code>csvdata</code>.</p>
-<p>Looking at both <code>exceldata</code> and <code>csvdata</code>
-together with how the contents of the files were represented in Excel
-and a text editor (images above), discuss with your peers any
-differences or similarities in how the data is being represented, and
-write down your answers in the Etherpad.</p>
+<p>Compare how the data files were represented in Excel and a text
+editor (images above) to how <code>exceldata</code> and
+<code>csvdata</code> are represented in R. Do you notice any differences
+or similarities?</p>
+<p>Write down your answers in the Etherpad.</p>
 </div>
 </div>
 </div>
@@ -1458,16 +1443,24 @@ write down your answers in the Etherpad.</p>
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">
-<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>The wonders of R</h3>
+<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>How R displayed our data</h3>
 </button>
 <div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
-<p>What R has done is that it has represented the data in both Excel and
-csv formats as tabular structures.</p>
+<p>Data in Excel is presented in tabular format (the rows and columns)
+in cells. When we opened the .csv file outside of R, our data was not
+presented in a tabular format, but as a text file with data separated by
+commas (hence <strong>c</strong>omma <strong>s</strong>eperated
+<strong>v</strong>alues). However, R stored both data file formats as
+tabular data.</p>
 </div>
 </div>
 </div>
 </div>
+</div>
+<div class="section level3">
+<h3 id="excel-vs-csv">Excel vs csv<a class="anchor" aria-label="anchor" href="#excel-vs-csv"></a>
+</h3>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1481,12 +1474,12 @@ csv formats as tabular structures.</p>
 <li>Use <code>read.csv()</code> to import a csv data file in R</li>
 <li>Use <code>read_excel()</code> from the <code>readxl</code> package
 to import an Excel data file in R</li>
+<li>Use the assign operator <code>&lt;-</code> to give a name to your
+data set</li>
 <li>Specify how to deal with missing values using the
 <code>na.strings</code> argument in <code>read.csv()</code> when
 importing a csv file or the <code>na</code> argument in
 <code>read_excel()</code> when importing an Excel file</li>
-<li>Use the assign operator <code>&lt;-</code> to give a name to your
-data set</li>
 <li>Use <code>print</code> to display the contents of your object in the
 R console</li>
 </ul>
