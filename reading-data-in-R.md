@@ -25,7 +25,7 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introducing our dummy data set 
-During this and the following episodes, we will be using a dummy data set as an example of survey data. The dummy data sat is inspired by a study about the effect of background music on individuals’ working memory capacity carried out by [Lehmann and Suefert, 2017](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full). Our fake study consisted of  participants carrying out a comprehension task and a working memory task in one of the two conditions: in silence, or with background music. Participants also rated their mood and arousal on 5-point scales, and demographic information such as musicianship and age was collected. The fake study was run online, and data was collected using a Web-based survey tool. We will use R to explore the data set, and analyse the data, to see whether background music had an effect on our fake participants’ performances in the tasks.
+During this and the following episodes, we will be using a dummy data set as an example of survey data. The dummy data set is inspired by a study about the effect of background music on individuals’ working memory capacity carried out by [Lehmann and Suefert, 2017](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full). Our fake study consisted of  participants carrying out a comprehension task and a working memory task in one of the two conditions: in silence, or with background music. Participants also rated their mood and arousal on 5-point scales, and demographic information such as musicianship and age was collected. The fake study was run online, and data was collected using a Web-based survey tool. We will use R to explore the data set, and analyse the data, to see whether background music had an effect on our fake participants’ performances in the tasks.
 
 But first, we need to download the files and import the data into R. 
 
@@ -102,13 +102,8 @@ We will now load our Excel data file into R, and assign our data file a name so 
 
 We will call our data file `exceldata`.
 
-
-```r
+``` R
 exceldata <- read_excel("dummy_data.xslx")
-```
-
-```{.error}
-Error: `path` does not exist: 'dummy_data.xslx'
 ```
 Once this command is run, an object with the name `exceldata` showing the number of observations and variables should be present in the Environment pane (top right). 
 
@@ -118,39 +113,33 @@ Let us now import our csv file into R.
 
 We will use the `read.csv()` function to import our csv file. Similarly, we will give our csv data file a name and 'save' it in our R environment. We will call this data file `csvdata`.
 
-
-```r
+``` R
 csvdata <- read.csv("dummy_data.csv")
 ```
 
-```{.warning}
-Warning in file(file, "rt"): cannot open file 'dummy_data.csv': No such file or
-directory
-```
+This new object or variable can now be seen in our Environment pane.
 
-```{.error}
-Error in file(file, "rt"): cannot open the connection
-```
-
-This new item (or object/variable) can now be seen in our Environment pane.
-
+  
 ::::::::::::::: challenge
-## Discussion: Excel vs csv
+## Exercise: Representation of our two data files
 
-Let's look at the contents of our `exceldata` in R using `View(exceldata)`. The contens of `exceldata` should open up in a new tab. 
+Let's look at the contents of our `exceldata` in R using `View(exceldata)`. The contents of `exceldata` should open up in a new tab. 
 Use the same function to view the contents of `csvdata`. 
 
-Looking at both `exceldata` and `csvdata` together with how the contents of the files were represented in Excel and a text editor (images above), discuss with your peers any differences or similarities in how the data is being represented, and write down your answers in the Etherpad. 
+Compare how the data files were represented in Excel and a text editor (images above) to how `exceldata` and `csvdata` are represented in R. Do you notice any differences or similarities?
+
+Write down your answers in the Etherpad.
 
 ::::::::::::::::::::
 
 ::::::::::::::::::::: spoiler
-## The wonders of R
+## How R displayed our data
 
-What R has done is that it has represented the data in both Excel and csv formats as tabular structures. 
+Data in Excel is presented in tabular format (the rows and columns) in cells. When we opened the .csv file outside of R, our data was not presented in a tabular format, but as a text file with data separated by commas (hence **c**omma **s**eperated **v**alues). However, R stored both data file formats as tabular data. 
 
 ::::::::::::::::::::::::::
 
+### Excel vs csv 
 
 
 :::::::::::: keypoints
@@ -158,8 +147,8 @@ What R has done is that it has represented the data in both Excel and csv format
 - R can read multiple file types
 - Use `read.csv()` to import a csv data file in R
 - Use `read_excel()` from the `readxl` package to import an Excel data file in R
-- Specify how to deal with missing values using the `na.strings` argument in `read.csv()` when importing a csv file or the `na` argument in `read_excel()` when importing an Excel file
 - Use the assign operator `<-` to give a name to your data set
+- Specify how to deal with missing values using the `na.strings` argument in `read.csv()` when importing a csv file or the `na` argument in `read_excel()` when importing an Excel file
 - Use `print` to display the contents of your object in the R console
 
 :::::::::::::::::::::
