@@ -119,7 +119,14 @@ csvdata <- read.csv("dummy_data.csv")
 
 This new object or variable can now be seen in our Environment pane.
 
-  
+:::::::::::::: instructor
+
+A good place for a checkpoint, to make sure everyone is up to speed. 
+Approx. time ~ 11 min up to here.
+
+::::::::::::::::::
+
+
 ::::::::::::::: challenge
 ## Exercise: Representation of our two data files
 
