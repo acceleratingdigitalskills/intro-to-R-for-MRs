@@ -27,7 +27,7 @@ exercises: 0
 ## Introducing our dummy data set 
 During this and the following episodes, we will be using a dummy data set as an example of survey data. The dummy data sat is inspired by a study about the effect of background music on individuals’ working memory capacity carried out by [Lehmann and Suefert, 2017](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full). Our fake study consisted of  participants carrying out a comprehension task and a working memory task in one of the two conditions: in silence, or with background music. Participants also rated their mood and arousal on 5-point scales, and demographic information such as musicianship and age was collected. The fake study was run online, and data was collected using a Web-based survey tool. We will use R to explore the data set, and analyse the data, to see whether background music had an effect on our fake participants’ performances in the tasks.
 
-But first, we need to import the data into R. 
+But first, we need to download the files and import the data into R. 
 
 Download the data files [here](https://drive.google.com/drive/folders/18bMh1zofsAdbwdsm7NwzsELXPBwYoUn9?usp=share_link). 
 
@@ -41,8 +41,18 @@ Remember that R needs to know in which directory to look for files to be used an
 
 :::::::::::::::::
 
-## Importing data files in R (two-ways)
-Our dummy data set files come in two formats: a **.csv** file and a **.xlsx** file. To test out how R handles both types of data files, we will first import the Excel file, and then the csv file in R. 
+## Dummy data set formats
+Our dummy data set files come in two formats: an Excel file and a csv file.
+
+When opening our **dummy_data.xlxs** file in Excel, we are presented with the data in this manner: 
+
+![The dummy data set in Excel format](fig/excel-screenshot.png)
+
+When opening our **dummy_data.csv** file using a text editor, our data looks something like this:
+
+![The dummy data set in csv format](fig/csv-screenshot.png)
+
+To test out how R handles both types of data files, we will first import the Excel file, and then the csv file in R. 
 
 ### Importing an Excel data file
 
@@ -102,7 +112,44 @@ Error: `path` does not exist: 'dummy_data.xslx'
 ```
 Once this command is run, an object with the name `exceldata` showing the number of observations and variables should be present in the Environment pane (top right). 
 
-Let's view the contents of our data file using `View(exceldata)`. The file should open up in a new tab. 
+Let us now import our csv file into R. 
+
+### Importing a csv data file
+
+We will use the `read.csv()` function to import our csv file. Similarly, we will give our csv data file a name and 'save' it in our R environment. We will call this data file `csvdata`.
+
+
+```r
+csvdata <- read.csv("dummy_data.csv")
+```
+
+```{.warning}
+Warning in file(file, "rt"): cannot open file 'dummy_data.csv': No such file or
+directory
+```
+
+```{.error}
+Error in file(file, "rt"): cannot open the connection
+```
+
+This new item (or object/variable) can now be seen in our Environment pane.
+
+::::::::::::::: challenge
+## Discussion: Excel vs csv
+
+Let's look at the contents of our `exceldata` in R using `View(exceldata)`. The contens of `exceldata` should open up in a new tab. 
+Use the same function to view the contents of `csvdata`. 
+
+Looking at both `exceldata` and `csvdata` together with how the contents of the files were represented in Excel and a text editor (images above), discuss with your peers any differences or similarities in how the data is being represented, and write down your answers in the Etherpad. 
+
+::::::::::::::::::::
+
+::::::::::::::::::::: spoiler
+## The wonders of R
+
+What R has done is that it has represented the data in both Excel and csv formats as tabular structures. 
+
+::::::::::::::::::::::::::
 
 
 
