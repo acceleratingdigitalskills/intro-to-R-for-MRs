@@ -37,7 +37,7 @@ Download the data files [here](https://drive.google.com/drive/folders/18bMh1zofs
 Remember that R needs to know in which directory to look for files to be used and/or saved. The data files downloaded should be put in the directory set up in [Episode 4](https://acceleratingdigitalskills.github.io/intro-to-R-for-MRs/creating-directory-structure.html). 
 
 + To check what your working directory is set to, use `getwd()`.
-+ To set a new working directory, use `setwd("pathway here")`.
++ To set a new working directory, use `setwd("pathway here")`, or go into the desired folder through the Files Pane and click on the Cogwheel and select *Set as working directory*.
 
 :::::::::::::::::
 
@@ -70,7 +70,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing readxl ...                         OK [linked from cache]
-Successfully installed 1 package in 5.4 milliseconds.
+Successfully installed 1 package in 5.1 milliseconds.
 ```
 
 Step 2: Load the library package in your R environment
@@ -83,7 +83,12 @@ library(readxl)
 :::::::::::::
 ::::::::::::::::::::::::::
 
+:::::::::::::: callout
+## TIP
 
+A quick way to check whether a library package was loaded in your environment or not, is to go to the Packages pane (bottom-right) and the Search function, look up the name of your library package. A tick should be displayed next to the library package name, indicating that the package is loaded.
+
+:::::::::::::::::
 
 
 
