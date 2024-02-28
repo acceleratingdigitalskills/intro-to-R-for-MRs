@@ -34,8 +34,7 @@ Remember that R needs to know in which directory to look for files to be used an
 
 - To check what your working directory is set to, use `getwd()`.  
 - To set a new working directory, use `setwd("pathway here")`, or go into the desired folder through the Files Pane and click on the Cogwheel and select *Set as working directory*.  
-
-:::::::::::::::::
+::::::::::::::::::::
 
 ## Dummy data set formats
 Our dummy data set files come in two formats: an Excel file and a csv file.
@@ -59,7 +58,7 @@ An Excel file can be imported in R using the library package `readxl`. We need t
 
 Install and load the `readxl` package
 
-::::::::: solution 
+:::::::::: solution 
 
 Step 1: Install the package
 
@@ -75,11 +74,10 @@ library(readxl)
 
 :::::::::::::
 ::::::::::::::::::::::::::
-
-:::::::::::::: callout
+  
+::::::::::::::: callout
 ## TIP
 A quick way to check whether a library package was loaded in your environment or not, is to go to the Packages pane (bottom-right) and the Search function, look up the name of your library package. A tick should be displayed next to the library package name, indicating that the package is loaded.
-
 :::::::::::::::::
 
 We will now load our Excel data file into R, and assign our data file a name so that we can store it in our RStudio environment - in other words, saving our file in R's memory. To do so, we will use the **assign operator** which is **<-**. 
@@ -89,6 +87,7 @@ We will call our data file `exceldata`.
 ``` R
 exceldata <- read_excel("dummy_data.xslx")
 ```
+
 Once this command is run, an object with the name `exceldata` showing the number of observations and variables should be present in the Environment pane (top right). 
 
 Let us now import our csv file into R. 
@@ -120,14 +119,13 @@ Use the same function to view the contents of `csvdata`.
 Compare how the data files were represented in Excel and a text editor (images above) to how `exceldata` and `csvdata` are represented in R. Do you notice any differences or similarities?
 
 Write down your answers in the Etherpad.
+::::::::::::::::::::::
 
-:::::::::::::::::::::
 
 ::::::::::::::::::: spoiler
 ## How R displayed our data
 
 Data in Excel is presented in tabular format (the rows and columns) in cells. When we opened the .csv file outside of R, our data was not presented in a tabular format, but as a text file with data separated by commas (hence **c**omma **s**eperated **v**alues). However, R stored both data file formats as tabular data. 
-
 ::::::::::::::::::::::::::::
 
 ### Excel vs csv 
@@ -146,12 +144,12 @@ Since we do not need the `exceldata` anymore, we will remove this from our R env
 
 ### Dealing with missing values 
 
-More often than not, our data will contain some missing values, perhaps because certain participants did not complete the survey, or naybe there were some optional questions which participants opted to skip. 
+More often than not, our data will contain some missing values, perhaps because certain participants did not complete the survey, or maybe there were some optional questions which participants opted to skip. 
 
 One way to deal with missing values is at the data import stage. Most funtions in R tend to have several *arguments* (or settings) that you can specify.
 One of the arguments of the `read.csv()` function that comes in handy in these cases is the `na.strings`.
 
-The `na.strings` argument allows you to specify which values in your data set should be interpreted as NA values. T
+The `na.strings` argument allows you to specify which values in your data set should be interpreted as NA values.
 
 For example, for blank fields to be considered as missing values when importing a data file, we could write the following code:
 
@@ -163,6 +161,7 @@ We can also specify any words (i.e., data of character type) that should be rega
 
 ```R
 ourdata <- read.csv("dummy_data.csv", na.strings = "NA")
+```
 
 **Note.** Here we put NA in "" since in this case NA is written text. 
 
