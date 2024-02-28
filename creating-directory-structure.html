@@ -195,7 +195,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="reading-data-in-R.html">5. Reading data in R</a>
+        <a href="reading-data-in-R.html">5. Reading survey data in R</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -307,7 +307,7 @@
           Previous: Getting started with
         </a>
         <a class="chapter-link float-end" href="reading-data-in-R.html" rel="next">
-          Next: Reading data in R... 
+          Next: Reading survey data... 
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -374,13 +374,12 @@ for <em>get working directory</em>).</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<div id="reminder-use-of-r-script-vs-console" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="reminder-use-of-r-script-vs-console" class="callout-inner">
-<h3 class="callout-title">Reminder: Use of R script vs Console<a class="anchor" aria-label="anchor" href="#reminder-use-of-r-script-vs-console"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="reminder-use-of-r-script-vs-console">Reminder: Use of R script vs Console<a class="anchor" aria-label="anchor" href="#reminder-use-of-r-script-vs-console"></a></h3>
 <div class="callout-content">
 <p>You can type the commands directly in the Console, and press
 <code>Return</code> to execute the command. Remember that commands typed
@@ -421,13 +420,12 @@ desired folder as the working directory.</p>
 </div>
 <p>Alex has now confirmed that R is seeing the <code>my-r-project</code>
 as the working directory.</p>
-<div id="good-to-know" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="good-to-know" class="callout-inner">
-<h3 class="callout-title">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="good-to-know">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know"></a></h3>
 <div class="callout-content">
 <p>You can also set your working directory by navigating through your
 device’s system in the Files pane (bottom right pane), going into the
@@ -457,13 +455,12 @@ data manipulation R scripts</li>
 <li>
 <strong>documents/</strong> Alex will use this folder for the
 research report and any written drafts</li>
-</ul><div id="good-to-know-1" class="callout callout">
+</ul><div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="good-to-know-1" class="callout-inner">
-<h3 class="callout-title">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know-1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="good-to-know-1">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know-1"></a></h3>
 <div class="callout-content">
 <p>There is no specific folder structure that needs following - the
 folder structure is completely up to you, however, having some sort of
@@ -514,17 +511,17 @@ working directory.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Create the folders using <code>dir.create()</code>
 </li>
 </ol><div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"figures"</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"scripts)</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="st">dir.create("</span>munge<span class="st">")</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="st">dir.create("</span>documents<span class="st">")</span></span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"figures"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"scripts)</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="st">dir.create("</span>munge<span class="st">")</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="st">dir.create("</span>documents<span class="st">")</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>Check all items in your working directory</li>
 </ol><div class="codewrapper sourceCode" id="cb7">
@@ -540,7 +537,8 @@ working directory.</p>
 <p>Alternatively, new folders can be created through the Files pane
 (bottom right pane in environment) by clicking on the <em>new folder
 icon</em>.</p>
-<figure><img src="fig/new-folder.png" alt="Small icon showing a yellow folder with a white plus sign on a green circle" class="figure mx-auto d-block"><figcaption>New folder icon</figcaption></figure><p>Folders can also be created outside of RStudio through File
+<figure><img src="fig/new-folder.png" alt="Small icon showing a yellow folder with a white plus sign on a green circle" class="figure mx-auto d-block"><div class="figcaption">New folder icon</div>
+</figure><p>Folders can also be created outside of RStudio through File
 Explorer/Manager on Windows and Linux, and Finder on Mac.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -580,7 +578,7 @@ any links that you are not going to use.
           Previous: Getting started with
         </a>
         <a class="chapter-link float-end" href="reading-data-in-R.html" rel="next">
-          Next: Reading data in R... 
+          Next: Reading survey data... 
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -627,7 +625,7 @@ any links that you are not going to use.
   "identifier": "https://carpentries.github.io/workbench-template-rmd/creating-directory-structure.html",
   "dateCreated": "2023-11-16",
   "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-02-28"
 }
 
   </script><script>

@@ -229,7 +229,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="reading-data-in-R.html">5. Reading data in R</a>
+        <a href="reading-data-in-R.html">5. Reading survey data in R</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -506,7 +506,8 @@ plots that we will produce.</p>
 <hr class="half-width">
 <p>When you first open RStudio, you will be presented with the default
 layout of 3 main panes.</p>
-<figure><img src="fig/R-3-panes.png" alt="Screenshot showing the RStudio interface with three main panes: the console on the left, the environment/history/connections tab in the top-right pane, and the plots/packages/help tab in the bottom-right pane. Menus and toolbars are located at the top." class="figure mx-auto d-block"><figcaption>The default layout in RStudio</figcaption></figure><p>Default Layout:</p>
+<figure><img src="fig/R-3-panes.png" alt="Screenshot showing the RStudio interface with three main panes: the console on the left, the environment/history/connections tab in the top-right pane, and the plots/packages/help tab in the bottom-right pane. Menus and toolbars are located at the top." class="figure mx-auto d-block"><div class="figcaption">The default layout in RStudio</div>
+</figure><p>Default Layout:</p>
 <ul>
 <li>
 <strong>Console Pane</strong> (left side of screen): This is the
@@ -558,12 +559,12 @@ session will be displayed in this tab.</li>
 <p><em>Note.</em> During this lesson we will not be generating any HTML
 content, therefore, we will not be using the Viewer and Presentation
 tabs.</p>
-<div id="customise-your-layout" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="customise-your-layout" class="callout-inner">
-<h3 class="callout-title">Customise your layout<a class="anchor" aria-label="anchor" href="#customise-your-layout"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="customise-your-layout">Customise your layout<a class="anchor" aria-label="anchor" href="#customise-your-layout"></a>
 </h3>
 <div class="callout-content">
 <p>The placement of these panes can be customised from the <em>Tools
@@ -598,8 +599,9 @@ will create an empty R script, which will appear in the top left pane.
 This is now the R script editor, where you can type your code in the R
 script file. The RStudio layout has now changed to display 4 panes
 instead of the original 3.</p>
-<figure><img src="fig/R-4-panes.png" alt="Screenshot showing the RStudio interface with four main panes: the script editor in the top-left pane, the console in the bottom-left pane, the environment/history/connections tab in the top-right pane, and the plots/packages/help tab in the bottom-right pane. Menus and toolbars are located at the top." class="figure mx-auto d-block"><figcaption>The RStudio layout now including the R script
-editor</figcaption></figure><p>R scripts have <code>.R</code> as their file extension. Since typing
+<figure><img src="fig/R-4-panes.png" alt="Screenshot showing the RStudio interface with four main panes: the script editor in the top-left pane, the console in the bottom-left pane, the environment/history/connections tab in the top-right pane, and the plots/packages/help tab in the bottom-right pane. Menus and toolbars are located at the top." class="figure mx-auto d-block"><div class="figcaption">The RStudio layout now including the R script
+editor</div>
+</figure><p>R scripts have <code>.R</code> as their file extension. Since typing
 up commands in an R script is similar to typing words in a text editor,
 pressing the <code>Return</code> key will not run your commands (like
 what happens in the Console pane), but it will create a new line for you
@@ -610,12 +612,12 @@ of the code will appear in the Console.</p>
 <p>To run a line of code in your R script, make sure that your cursor is
 on the line of the script that you want to run, and then press the
 <code>Run</code> button at the top of the Editor pane.</p>
-<div id="shortcut-to-run-r-script-code" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="shortcut-to-run-r-script-code" class="callout-inner">
-<h3 class="callout-title">Shortcut to run R script code<a class="anchor" aria-label="anchor" href="#shortcut-to-run-r-script-code"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="shortcut-to-run-r-script-code">Shortcut to run R script code<a class="anchor" aria-label="anchor" href="#shortcut-to-run-r-script-code"></a>
 </h3>
 <div class="callout-content">
 <p>Instead of pressing the <code>Run</code> button at the top of the
@@ -630,12 +632,12 @@ menu, select <em>Run selected line(s)</em>
 </div>
 </div>
 </div>
-<div id="dont-forget-to-save-your-work" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="dont-forget-to-save-your-work" class="callout-inner">
-<h3 class="callout-title">Don’t forget to save your work<a class="anchor" aria-label="anchor" href="#dont-forget-to-save-your-work"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="dont-forget-to-save-your-work">Don’t forget to save your work<a class="anchor" aria-label="anchor" href="#dont-forget-to-save-your-work"></a>
 </h3>
 <div class="callout-content">
 <p>Make sure to save your R script by either pressing the floppy disk (a
@@ -863,12 +865,12 @@ search through all R documentation, as well as installed packages and
 online resources for functions and packages which contain the keyword
 inputted, and will display the results in the Help pane as links to all
 functions and packages containing the keyword.</p>
-<div id="a-shortcut" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="a-shortcut" class="callout-inner">
-<h3 class="callout-title">A shortcut<a class="anchor" aria-label="anchor" href="#a-shortcut"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="a-shortcut">A shortcut<a class="anchor" aria-label="anchor" href="#a-shortcut"></a>
 </h3>
 <div class="callout-content">
 <p>Instead of <code>help.search()</code>, you can also use its
@@ -991,12 +993,12 @@ for <em>get working directory</em>).</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">getwd</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<div id="reminder-use-of-r-script-vs-console" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="reminder-use-of-r-script-vs-console" class="callout-inner">
-<h3 class="callout-title">Reminder: Use of R script vs Console<a class="anchor" aria-label="anchor" href="#reminder-use-of-r-script-vs-console"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="reminder-use-of-r-script-vs-console">Reminder: Use of R script vs Console<a class="anchor" aria-label="anchor" href="#reminder-use-of-r-script-vs-console"></a>
 </h3>
 <div class="callout-content">
 <p>You can type the commands directly in the Console, and press
@@ -1038,12 +1040,12 @@ desired folder as the working directory.</p>
 </div>
 <p>Alex has now confirmed that R is seeing the <code>my-r-project</code>
 as the working directory.</p>
-<div id="good-to-know" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="good-to-know" class="callout-inner">
-<h3 class="callout-title">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="good-to-know">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know"></a>
 </h3>
 <div class="callout-content">
 <p>You can also set your working directory by navigating through your
@@ -1077,12 +1079,12 @@ data manipulation R scripts</li>
 <strong>documents/</strong> Alex will use this folder for the
 research report and any written drafts</li>
 </ul>
-<div id="good-to-know-1" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="good-to-know-1" class="callout-inner">
-<h3 class="callout-title">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know-1"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="good-to-know-1">Good to know<a class="anchor" aria-label="anchor" href="#good-to-know-1"></a>
 </h3>
 <div class="callout-content">
 <p>There is no specific folder structure that needs following - the
@@ -1136,7 +1138,7 @@ working directory.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Create the folders using <code>dir.create()</code>
@@ -1145,10 +1147,10 @@ working directory.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"figures"</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"scripts)</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="st">dir.create("</span>munge<span class="st">")</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="st">dir.create("</span>documents<span class="st">")</span></span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"figures"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"scripts)</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="st">dir.create("</span>munge<span class="st">")</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="st">dir.create("</span>documents<span class="st">")</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Check all items in your working directory</li>
@@ -1166,7 +1168,8 @@ working directory.</p>
 <p>Alternatively, new folders can be created through the Files pane
 (bottom right pane in environment) by clicking on the <em>new folder
 icon</em>.</p>
-<figure><img src="fig/new-folder.png" alt="Small icon showing a yellow folder with a white plus sign on a green circle" class="figure mx-auto d-block"><figcaption>New folder icon</figcaption></figure><p>Folders can also be created outside of RStudio through File
+<figure><img src="fig/new-folder.png" alt="Small icon showing a yellow folder with a white plus sign on a green circle" class="figure mx-auto d-block"><div class="figcaption">New folder icon</div>
+</figure><p>Folders can also be created outside of RStudio through File
 Explorer/Manager on Windows and Linux, and Finder on Mac.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -1196,9 +1199,9 @@ directory</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section><section id="aio-reading-data-in-R"><p>Content from <a href="reading-data-in-R.html">Reading data in R</a></p>
+</section></section><section id="aio-reading-data-in-R"><p>Content from <a href="reading-data-in-R.html">Reading survey data in R</a></p>
 <hr>
-<p>Last updated on 2024-02-26 |
+<p>Last updated on 2024-02-28 |
         
         <a href="https://github.com/carpentries/workbench-template-rmd/edit/main/episodes/reading-data-in-R.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1261,7 +1264,26 @@ R console</li>
 </ul>
 </div>
 </div>
-</div></section><section id="aio-inspecting-data"><p>Content from <a href="inspecting-data.html">Inspecting your data in R</a></p>
+</div>
+<section id="importing-survey-data-in-r"><h2 class="section-heading">Importing survey data in R<a class="anchor" aria-label="anchor" href="#importing-survey-data-in-r"></a>
+</h2>
+<hr class="half-width">
+<p>Alex is working on a replication study about the effect of background
+music on individuals’ working memory capacity, based on the study by <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full" class="external-link">Lehmann
+and Suefert, 2017</a>. Similar to Lehmann and Suefert, Alex ran a study
+where participants carried out a comprehension task and a working memory
+task, either in silence, or with background music. The study was run
+online, and data was collected using a Web-based survey tool. Alex has
+collected a sufficient number of responses, and now wants to download
+and analyse the data, to see whether background music had an effect on
+the participants’ performances in the tasks.</p>
+<p>But first, Alex needs to import the data into R.</p>
+<p>Download the data files <a href="https://drive.google.com/drive/folders/18bMh1zofsAdbwdsm7NwzsELXPBwYoUn9?usp=share_link" class="external-link">‘here’</a></p>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-inspecting-data"><p>Content from <a href="inspecting-data.html">Inspecting your data in R</a></p>
 <hr>
 <p>Last updated on 2024-02-26 |
         
@@ -1690,8 +1712,8 @@ your code (e.g., packages)</li>
   "url": "https://carpentries.github.io/workbench-template-rmd/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-rmd/aio.html",
   "dateCreated": "2023-11-16",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-02-28",
+  "datePublished": "2024-02-28"
 }
 
   </script><script>

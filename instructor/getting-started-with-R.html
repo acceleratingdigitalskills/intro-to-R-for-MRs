@@ -199,7 +199,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="reading-data-in-R.html">5. Reading data in R</a>
+        <a href="reading-data-in-R.html">5. Reading survey data in R</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -381,7 +381,8 @@ plots that we will produce.</p>
 </h2>
 <hr class="half-width"><p>When you first open RStudio, you will be presented with the default
 layout of 3 main panes.</p>
-<figure><img src="../fig/R-3-panes.png" alt="Screenshot showing the RStudio interface with three main panes: the console on the left, the environment/history/connections tab in the top-right pane, and the plots/packages/help tab in the bottom-right pane. Menus and toolbars are located at the top." class="figure mx-auto d-block"><figcaption>The default layout in RStudio</figcaption></figure><p>Default Layout:</p>
+<figure><img src="../fig/R-3-panes.png" alt="Screenshot showing the RStudio interface with three main panes: the console on the left, the environment/history/connections tab in the top-right pane, and the plots/packages/help tab in the bottom-right pane. Menus and toolbars are located at the top." class="figure mx-auto d-block"><div class="figcaption">The default layout in RStudio</div>
+</figure><p>Default Layout:</p>
 <ul><li>
 <strong>Console Pane</strong> (left side of screen): This is the
 interface you would use if you were working in R rather than RStudio.
@@ -429,13 +430,12 @@ session will be displayed in this tab.</li>
 </ul><p><em>Note.</em> During this lesson we will not be generating any HTML
 content, therefore, we will not be using the Viewer and Presentation
 tabs.</p>
-<div id="customise-your-layout" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="customise-your-layout" class="callout-inner">
-<h3 class="callout-title">Customise your layout<a class="anchor" aria-label="anchor" href="#customise-your-layout"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="customise-your-layout">Customise your layout<a class="anchor" aria-label="anchor" href="#customise-your-layout"></a></h3>
 <div class="callout-content">
 <p>The placement of these panes can be customised from the <em>Tools
 &gt; Global Options &gt; Pane Layout</em> menu.</p>
@@ -467,8 +467,9 @@ will create an empty R script, which will appear in the top left pane.
 This is now the R script editor, where you can type your code in the R
 script file. The RStudio layout has now changed to display 4 panes
 instead of the original 3.</p>
-<figure><img src="../fig/R-4-panes.png" alt="Screenshot showing the RStudio interface with four main panes: the script editor in the top-left pane, the console in the bottom-left pane, the environment/history/connections tab in the top-right pane, and the plots/packages/help tab in the bottom-right pane. Menus and toolbars are located at the top." class="figure mx-auto d-block"><figcaption>The RStudio layout now including the R script
-editor</figcaption></figure><p>R scripts have <code>.R</code> as their file extension. Since typing
+<figure><img src="../fig/R-4-panes.png" alt="Screenshot showing the RStudio interface with four main panes: the script editor in the top-left pane, the console in the bottom-left pane, the environment/history/connections tab in the top-right pane, and the plots/packages/help tab in the bottom-right pane. Menus and toolbars are located at the top." class="figure mx-auto d-block"><div class="figcaption">The RStudio layout now including the R script
+editor</div>
+</figure><p>R scripts have <code>.R</code> as their file extension. Since typing
 up commands in an R script is similar to typing words in a text editor,
 pressing the <code>Return</code> key will not run your commands (like
 what happens in the Console pane), but it will create a new line for you
@@ -479,13 +480,12 @@ of the code will appear in the Console.</p>
 <p>To run a line of code in your R script, make sure that your cursor is
 on the line of the script that you want to run, and then press the
 <code>Run</code> button at the top of the Editor pane.</p>
-<div id="shortcut-to-run-r-script-code" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="shortcut-to-run-r-script-code" class="callout-inner">
-<h3 class="callout-title">Shortcut to run R script code<a class="anchor" aria-label="anchor" href="#shortcut-to-run-r-script-code"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="shortcut-to-run-r-script-code">Shortcut to run R script code<a class="anchor" aria-label="anchor" href="#shortcut-to-run-r-script-code"></a></h3>
 <div class="callout-content">
 <p>Instead of pressing the <code>Run</code> button at the top of the
 Editor pane, you can either:</p>
@@ -497,13 +497,12 @@ menu, select <em>Run selected line(s)</em>
 </ul></div>
 </div>
 </div>
-<div id="dont-forget-to-save-your-work" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="dont-forget-to-save-your-work" class="callout-inner">
-<h3 class="callout-title">Don’t forget to save your work<a class="anchor" aria-label="anchor" href="#dont-forget-to-save-your-work"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="dont-forget-to-save-your-work">Don’t forget to save your work<a class="anchor" aria-label="anchor" href="#dont-forget-to-save-your-work"></a></h3>
 <div class="callout-content">
 <p>Make sure to save your R script by either pressing the floppy disk (a
 small light blue and white square) icon on the Editor pane, or by
@@ -726,13 +725,12 @@ search through all R documentation, as well as installed packages and
 online resources for functions and packages which contain the keyword
 inputted, and will display the results in the Help pane as links to all
 functions and packages containing the keyword.</p>
-<div id="a-shortcut" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="a-shortcut" class="callout-inner">
-<h3 class="callout-title">A shortcut<a class="anchor" aria-label="anchor" href="#a-shortcut"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="a-shortcut">A shortcut<a class="anchor" aria-label="anchor" href="#a-shortcut"></a></h3>
 <div class="callout-content">
 <p>Instead of <code>help.search()</code>, you can also use its
 equivalent shortcut <code>??</code></p>
@@ -858,7 +856,7 @@ any links that you are not going to use.
   "identifier": "https://carpentries.github.io/workbench-template-rmd/instructor/getting-started-with-R.html",
   "dateCreated": "2023-11-16",
   "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-02-28"
 }
 
   </script><script>
