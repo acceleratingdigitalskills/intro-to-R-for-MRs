@@ -193,7 +193,8 @@
         
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#importing-survey-data-in-r">Importing survey data in R</a></li>
+        <ul><li><a href="#introducing-our-dummy-data-set">Introducing our dummy data set</a></li>
+<li><a href="#importing-data-files-in-r-two-ways">Importing data files in R (two-ways)</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -331,7 +332,7 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>Which data files can be imported in R?</li>
+<ul><li>How do I import csv and Excel data files in R?</li>
 <li>How are files in Excel and csv format displayed in R?</li>
 <li>How does R deal with missing values?</li>
 <li>How do I give names to the data set imported?</li>
@@ -353,6 +354,105 @@
 </div>
 </div>
 </div>
+<section id="introducing-our-dummy-data-set"><h2 class="section-heading">Introducing our dummy data set<a class="anchor" aria-label="anchor" href="#introducing-our-dummy-data-set"></a>
+</h2>
+<hr class="half-width"><p>During this and the following episodes, we will be using a dummy data
+set as an example of survey data. The dummy data sat is inspired by a
+study about the effect of background music on individuals’ working
+memory capacity carried out by <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full" class="external-link">Lehmann
+and Suefert, 2017</a>. Our fake study consisted of participants carrying
+out a comprehension task and a working memory task in one of the two
+conditions: in silence, or with background music. Participants also
+rated their mood and arousal on 5-point scales, and demographic
+information such as musicianship and age was collected. The fake study
+was run online, and data was collected using a Web-based survey tool. We
+will use R to explore the data set, and analyse the data, to see whether
+background music had an effect on our fake participants’ performances in
+the tasks.</p>
+<p>But first, we need to import the data into R.</p>
+<p>Download the data files <a href="https://drive.google.com/drive/folders/18bMh1zofsAdbwdsm7NwzsELXPBwYoUn9?usp=share_link" class="external-link">here</a>.</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="reminder-files-need-to-be-in-the-working-directory">Reminder: Files need to be in the working
+directory<a class="anchor" aria-label="anchor" href="#reminder-files-need-to-be-in-the-working-directory"></a></h3>
+<div class="callout-content">
+<p>Remember that R needs to know in which directory to look for files to
+be used and/or saved. The data files downloaded should be put in the
+directory set up in <a href="https://acceleratingdigitalskills.github.io/intro-to-R-for-MRs/creating-directory-structure.html" class="external-link">Episode
+4</a>.</p>
+<ul><li>To check what your working directory is set to, use
+<code>getwd()</code>.</li>
+<li>To set a new working directory, use
+<code>setwd("pathway here)</code>.</li>
+</ul></div>
+</div>
+</div>
+</section><section id="importing-data-files-in-r-two-ways"><h2 class="section-heading">Importing data files in R (two-ways)<a class="anchor" aria-label="anchor" href="#importing-data-files-in-r-two-ways"></a>
+</h2>
+<hr class="half-width"><p>Our dummy data set files come in two formats: a <strong>.csv</strong>
+file and a <strong>.xlsx</strong> file. To test out how R handles both
+types of data files, we will first import the Excel file, and then the
+csv file in R.</p>
+<div class="section level3">
+<h3 id="importing-an-excel-data-file">Importing an Excel data file<a class="anchor" aria-label="anchor" href="#importing-an-excel-data-file"></a></h3>
+<p>An Excel file can be imported in R using the library package
+<code>readxl</code>. We need to install and load the library package by
+following the steps used in <a href="https://acceleratingdigitalskills.github.io/intro-to-R-for-MRs/getting-started-with-R.html" class="external-link">Episode
+3 of this lesson</a>, before we can use it.</p>
+<div id="exercise-the-readxl-package" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-the-readxl-package" class="callout-inner">
+<h3 class="callout-title">Exercise: The<code>readxl</code>package<a class="anchor" aria-label="anchor" href="#exercise-the-readxl-package"></a>
+</h3>
+<div class="callout-content">
+<p>Install and load the <code>readxl</code> package</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>Step 1: Install the package</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="st">"readxl"</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>The following package(s) will be installed:
+- readxl [1.4.3]
+These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-MRs/renv/profiles/lesson-requirements/renv/library/R-4.3/x86_64-pc-linux-gnu".
+
+# Installing packages --------------------------------------------------------
+- Installing readxl ...                         OK [linked from cache]
+Successfully installed 1 package in 5.2 milliseconds.</code></pre>
+</div>
+<p>Step 2: Load the library package in your R environment</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">readxl</span><span class="op">)</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>R can read different types of data files, including: - csv
+(comma-separated values) - tsv (tab-separated values) - Excel files -
+XML files - File types from STATA and SPSS - JSON files</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -376,23 +476,11 @@ R console</li>
 </ul></div>
 </div>
 </div>
-<section id="importing-survey-data-in-r"><h2 class="section-heading">Importing survey data in R<a class="anchor" aria-label="anchor" href="#importing-survey-data-in-r"></a>
-</h2>
-<hr class="half-width"><p>Alex is working on a replication study about the effect of background
-music on individuals’ working memory capacity, based on the study by <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01902/full" class="external-link">Lehmann
-and Suefert, 2017</a>. Similar to Lehmann and Suefert, Alex ran a study
-where participants carried out a comprehension task and a working memory
-task, either in silence, or with background music. The study was run
-online, and data was collected using a Web-based survey tool. Alex has
-collected a sufficient number of responses, and now wants to download
-and analyse the data, to see whether background music had an effect on
-the participants’ performances in the tasks.</p>
-<p>But first, Alex needs to import the data into R.</p>
-<p>Download the data files <a href="https://drive.google.com/drive/folders/18bMh1zofsAdbwdsm7NwzsELXPBwYoUn9?usp=share_link" class="external-link">‘here’</a></p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="creating-directory-structure.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
