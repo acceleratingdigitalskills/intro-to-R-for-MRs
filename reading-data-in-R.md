@@ -74,7 +74,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing readxl ...                         OK [linked from cache]
-Successfully installed 1 package in 5 milliseconds.
+Successfully installed 1 package in 5.1 milliseconds.
 ```
 
 Step 2: Load the library package in your R environment
