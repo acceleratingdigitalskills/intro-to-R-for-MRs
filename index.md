@@ -11,7 +11,7 @@ The main aim is to give a taste of what R can do for music researchers, and hope
 :::::::::::::: prereq
 
 -	This lesson requires R and RStudio to be installed on the learner’s device. 
--	The two dummy data set files need to be downloaded in preparation for this lesson.
+-	The [two dummy data set files](https://drive.google.com/drive/folders/18bMh1zofsAdbwdsm7NwzsELXPBwYoUn9?usp=share_link) need to be downloaded in preparation for this lesson.
 
 :::::::::::::::::::::::::
 
