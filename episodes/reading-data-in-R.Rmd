@@ -6,18 +6,14 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 - How do I import csv and Excel data files in R?
-- How are files in Excel and csv format displayed in R?
-- How does R deal with missing values?
+- How can R deal with missing values on import?
 - How do I give names to the data set imported?
-- How do I view the imported data?
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
-- Import an Excel data file in R
-- Import a csv data file in R
+- Import Excel and csv files in R
 - Specify how to deal with missing values
 - Create an object for your imported data
-- Display the imported data in R
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introducing our dummy data set 
