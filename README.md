@@ -7,7 +7,7 @@ The lesson is visible at: [https://acceleratingdigitalskills.github.io/intro-to-
 ## Lesson Overview
 This lesson is an introduction to R and RStudio designed for music researchers with no programming experience. The lesson aims to showcase how an individual might find R and RStudio useful for their music research. Some initial information about the R syntax and navigating the RStudio interface are given, followed by information about how to import CSV files, clean your data, look at subsets of your data, carry out some initial statistical calculations, visualising different elements of your data, and finally, present some best practices when writing code in R.
 
-This workshop is part of the ARHC-funded project ["Accelerating embedded computational analysis of Web data about music in UK universities"] (https://acceleratingdigitalskills.org) (AH/X007316/1) led by researchers at Durham University and University of Birmingham.
+This workshop is part of the ARHC-funded project [Accelerating embedded computational analysis of Web data about music in UK universities (AH/X007316/1)](https://acceleratingdigitalskills.org) led by researchers at Durham University and University of Birmingham.
 
 This lesson uses The Carpentries Workbench template.
 
