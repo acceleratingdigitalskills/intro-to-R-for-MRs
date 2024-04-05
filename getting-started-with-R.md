@@ -1,7 +1,7 @@
 ---
 title: "Getting started with R and RStudio"
 teaching: 25
-exercises: 0
+exercises: 10
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -178,7 +178,7 @@ These packages will be installed into "~/work/intro-to-R-for-MRs/intro-to-R-for-
 
 # Installing packages --------------------------------------------------------
 - Installing ggplot2 ...                        OK [linked from cache]
-Successfully installed 1 package in 4.1 milliseconds.
+Successfully installed 1 package in 4.2 milliseconds.
 ```
 
 Step 2 - Load package
