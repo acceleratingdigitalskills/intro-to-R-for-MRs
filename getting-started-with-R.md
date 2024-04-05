@@ -7,10 +7,9 @@ exercises: 10
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How do I navigate the RStudio user interface?
-- What do the different panes in RStudio do?
 - How do I run commands in the console?
 - What is an R script and how do I create one?
-- What are packages?
+- What are library packages?
 - How do I get help?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -18,10 +17,8 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Navigate the user interface of RStudio
-- Run commands in the console
-- Run commands in an R script
-- Learn how to install a library package
-- Learn how to load the downloaded package
+- Run commands in the console and in an R script
+- Learn how to install and load a library package
 - Look up documentation
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
