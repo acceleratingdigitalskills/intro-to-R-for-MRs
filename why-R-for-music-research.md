@@ -1,5 +1,5 @@
 ---
-title: "Why R for Music Research?"
+title: "R for Music Research"
 teaching: 0
 exercises: 0
 ---
