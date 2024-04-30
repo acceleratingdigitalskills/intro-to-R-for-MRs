@@ -17,7 +17,7 @@ exercises: 0
 
 - Determine the number of rows and columns in a data frame
 - Look up the names of the columns in a data frame
-- Pull up different parts of a data frame, such as data from one specific column, or data for one particular row
+- Pull up sections of a data frame
 - Inspect the internal structure of a data frame
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
